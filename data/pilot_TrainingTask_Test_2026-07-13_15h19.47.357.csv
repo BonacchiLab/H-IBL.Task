@@ -1,0 +1,4 @@
+﻿position,grating,thisN,thisTrialN,thisRepN,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,thisRow.t,notes,piloting,WelcomeScreen.started,text.started,key_resp.started,WelcomeScreen.stopped,key_resp.keys,key_resp.rt,key_resp.duration,Blank4000.started,text_3.started,text_3.stopped,Blank4000.stopped,participant,session,date,expName,expVersion,psychopyVersion,frameRate,expStart,
+,,,,,,,,,,,True,0.025246599689126015,0.05009369971230626,0.05009369971230626,1.6361350999213755,space,1.4834183999337256,None,,,,,pilot,001,2026-07-13_15h19.55.024,TrainingTask_Test,,2026.1.2,60.22688671645528,2026-07-13 15h19.55.403600 +0100,
+,,,,,,,,,,,,,,,,,,,1.636181099805981,1.6495258999057114,,5.634786099661142,pilot,001,2026-07-13_15h19.55.024,TrainingTask_Test,,2026.1.2,60.22688671645528,2026-07-13 15h19.55.403600 +0100,
+"(-0.5, 0)",100,0,0,0,0,0,0,28,,,,,,,,,,,,,,,,,,,,,,,

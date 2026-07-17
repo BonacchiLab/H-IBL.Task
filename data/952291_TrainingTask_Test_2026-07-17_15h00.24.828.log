@@ -1,0 +1,160 @@
+5.6781 	WARNING 	C:\Users\Asus\AppData\Roaming\psychopy3\fonts\Helvetica.truetype doesn't have valid font family name
+5.9223 	WARNING 	C:\Users\Asus\AppData\Roaming\psychopy3\fonts\Helvetica.truetype doesn't have valid font family name
+9.2837 	INFO 	Loaded monitor calibration from ['2026_03_19 21:58', '2026_07_17 14:32']
+9.2964 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1366, 768]. Using actual size
+9.7161 	INFO 	Using renderer 'Intel(R) UHD Graphics 620' for graphics
+9.7161 	INFO 	OpenGL version supported by driver is 4..
+10.4161 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001DA86632560>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001DA86632770>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001DA85132B90>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([1366,  768]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.4162 	EXP 	window1: backgroundImage = ''
+10.4163 	EXP 	window1: backgroundFit = 'none'
+10.8601 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+10.8602 	EXP 	window1: recordFrameIntervals = False
+11.0300 	EXP 	window1: recordFrameIntervals = True
+12.6968 	EXP 	window1: recordFrameIntervals = False
+12.6968 	EXP 	Screen (0) actual frame rate measured at 59.94Hz
+12.7469 	INFO 	keyboard.Keyboard is using ptb backend.
+12.7470 	EXP 	TrainingTask_Test: status = STARTED
+12.8585 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.8596 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+12.8630 	EXP 	Created polygonHorizontal = Line(__class__=<class 'psychopy.visual.line.Line'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=False, color=array([0., 0., 0.]), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='polygonHorizontal', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), units='deg', vertices=array([[-0.5, -0.5],
+       [ 0.5,  0.5]]), win=Window(...), windingRule=None)
+12.8646 	EXP 	Created polygonVertical = Line(__class__=<class 'psychopy.visual.line.Line'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygonVertical', opacity=1, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=array([[-0.5, -0.5],
+       [ 0.5,  0.5]]), win=Window(...), windingRule=None)
+12.8960 	EXP 	Created grating100or50 = GratingStim(__class__=<class 'psychopy.visual.grating.GratingStim'>, anchor='center', autoDraw=False, autoLog=True, blendmode='avg', color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, interpolate=True, mask='gauss', maskParams=None, name='grating100or50', opacity=1, ori=0.0, phase=array([5., 5.]), pos=array([0., 0.]), rgbPedestal=array([0., 0., 0.]), sf=array([1., 1.]), size=array([1., 1.]), tex='sin', texRes=256.0, units='deg', win=Window(...))
+12.8972 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+12.9051 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Obrigado pela sua participação', units='height', win=Window(...), wrapWidth=1)
+0.0137 	EXP 	Imported Grating_tt_test.xlsx as conditions, 30 conditions, 7 params
+0.0141 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'position': (-15, 0), 'grating': 0.5, 'size': (7, 7), 'correct_ans': 'l', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0176 	INFO 	Keyboard events cleared
+0.0175 	EXP 	text: autoDraw = True
+0.0175 	EXP 	text: autoDraw = False
+0.0175 	EXP 	text: autoDraw = False
+0.0175 	EXP 	text_3: autoDraw = True
+0.0175 	EXP 	text_3: autoDraw = False
+0.0175 	EXP 	text_3: autoDraw = False
+0.0175 	EXP 	polygonHorizontal: autoDraw = True
+0.0175 	EXP 	polygonVertical: autoDraw = True
+1.0079 	INFO 	Keyboard events cleared
+1.0078 	EXP 	grating100or50: autoDraw = True
+1.0078 	EXP 	grating100or50: tex = 'sin'
+1.0245 	EXP 	polygonHorizontal: autoDraw = False
+1.0245 	EXP 	polygonVertical: autoDraw = False
+3.9918 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'position': (-15, 0), 'grating': 0.5, 'size': (7, 7), 'correct_ans': 's', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+4.0077 	EXP 	grating100or50: autoDraw = False
+4.0077 	EXP 	polygonHorizontal: autoDraw = False
+4.0077 	EXP 	polygonVertical: autoDraw = False
+4.0077 	EXP 	grating100or50: autoDraw = False
+4.0077 	EXP 	polygonHorizontal: autoDraw = True
+4.0077 	EXP 	polygonVertical: autoDraw = True
+5.0088 	INFO 	Keyboard events cleared
+5.0086 	EXP 	polygonHorizontal: autoDraw = False
+5.0086 	EXP 	polygonVertical: autoDraw = False
+5.0086 	EXP 	grating100or50: autoDraw = True
+7.9918 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'position': (15, 0), 'grating': 1, 'size': (7, 7), 'correct_ans': 'l', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+8.0074 	EXP 	grating100or50: autoDraw = False
+8.0074 	EXP 	polygonHorizontal: autoDraw = False
+8.0074 	EXP 	polygonVertical: autoDraw = False
+8.0074 	EXP 	grating100or50: autoDraw = False
+8.0074 	EXP 	polygonHorizontal: autoDraw = True
+8.0074 	EXP 	polygonVertical: autoDraw = True
+9.0075 	INFO 	Keyboard events cleared
+9.0074 	EXP 	polygonHorizontal: autoDraw = False
+9.0074 	EXP 	polygonVertical: autoDraw = False
+9.0074 	EXP 	grating100or50: autoDraw = True
+11.9914 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'position': (15, 0), 'grating': 1, 'size': (7, 7), 'correct_ans': 's', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+12.0072 	EXP 	grating100or50: autoDraw = False
+12.0072 	EXP 	polygonHorizontal: autoDraw = False
+12.0072 	EXP 	polygonVertical: autoDraw = False
+12.0072 	EXP 	grating100or50: autoDraw = False
+12.0072 	EXP 	polygonHorizontal: autoDraw = True
+12.0072 	EXP 	polygonVertical: autoDraw = True
+13.0076 	INFO 	Keyboard events cleared
+13.0074 	EXP 	polygonHorizontal: autoDraw = False
+13.0074 	EXP 	polygonVertical: autoDraw = False
+13.0074 	EXP 	grating100or50: autoDraw = True
+15.9912 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'position': (-15, 0), 'grating': 0.5, 'size': (7, 7), 'correct_ans': 's', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+16.0073 	EXP 	grating100or50: autoDraw = False
+16.0073 	EXP 	polygonHorizontal: autoDraw = False
+16.0073 	EXP 	polygonVertical: autoDraw = False
+16.0073 	EXP 	grating100or50: autoDraw = False
+16.0073 	EXP 	polygonHorizontal: autoDraw = True
+16.0073 	EXP 	polygonVertical: autoDraw = True
+17.0072 	INFO 	Keyboard events cleared
+17.0071 	EXP 	polygonHorizontal: autoDraw = False
+17.0071 	EXP 	polygonVertical: autoDraw = False
+17.0071 	EXP 	grating100or50: autoDraw = True
+19.9916 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'position': (15, 0), 'grating': 1, 'size': (7, 7), 'correct_ans': 's', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+20.0073 	EXP 	grating100or50: autoDraw = False
+20.0073 	EXP 	polygonHorizontal: autoDraw = False
+20.0073 	EXP 	polygonVertical: autoDraw = False
+20.0073 	EXP 	grating100or50: autoDraw = False
+20.0073 	EXP 	polygonHorizontal: autoDraw = True
+20.0073 	EXP 	polygonVertical: autoDraw = True
+21.0070 	INFO 	Keyboard events cleared
+21.0069 	EXP 	polygonHorizontal: autoDraw = False
+21.0069 	EXP 	polygonVertical: autoDraw = False
+21.0069 	EXP 	grating100or50: autoDraw = True
+23.9909 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'position': (15, 0), 'grating': 1, 'size': (7, 7), 'correct_ans': 's', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+24.0066 	EXP 	grating100or50: autoDraw = False
+24.0066 	EXP 	polygonHorizontal: autoDraw = False
+24.0066 	EXP 	polygonVertical: autoDraw = False
+24.0066 	EXP 	grating100or50: autoDraw = False
+24.0066 	EXP 	polygonHorizontal: autoDraw = True
+24.0066 	EXP 	polygonVertical: autoDraw = True
+25.0068 	INFO 	Keyboard events cleared
+25.0067 	EXP 	polygonHorizontal: autoDraw = False
+25.0067 	EXP 	polygonVertical: autoDraw = False
+25.0067 	EXP 	grating100or50: autoDraw = True
+27.9905 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'position': (-15, 0), 'grating': 0.5, 'size': (7, 7), 'correct_ans': 's', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+28.0064 	EXP 	grating100or50: autoDraw = False
+28.0064 	EXP 	polygonHorizontal: autoDraw = False
+28.0064 	EXP 	polygonVertical: autoDraw = False
+28.0064 	EXP 	grating100or50: autoDraw = False
+28.0064 	EXP 	polygonHorizontal: autoDraw = True
+28.0064 	EXP 	polygonVertical: autoDraw = True
+29.0066 	INFO 	Keyboard events cleared
+29.0065 	EXP 	polygonHorizontal: autoDraw = False
+29.0065 	EXP 	polygonVertical: autoDraw = False
+29.0065 	EXP 	grating100or50: autoDraw = True
+31.9903 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'position': (-15, 0), 'grating': 0.5, 'size': (7, 7), 'correct_ans': 'l', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+32.0067 	EXP 	grating100or50: autoDraw = False
+32.0067 	EXP 	polygonHorizontal: autoDraw = False
+32.0067 	EXP 	polygonVertical: autoDraw = False
+32.0067 	EXP 	grating100or50: autoDraw = False
+32.0067 	EXP 	polygonHorizontal: autoDraw = True
+32.0067 	EXP 	polygonVertical: autoDraw = True
+33.0064 	INFO 	Keyboard events cleared
+33.0063 	EXP 	polygonHorizontal: autoDraw = False
+33.0063 	EXP 	polygonVertical: autoDraw = False
+33.0063 	EXP 	grating100or50: autoDraw = True
+35.9902 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'position': (-15, 0), 'grating': 0.5, 'size': (7, 7), 'correct_ans': 's', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+36.0063 	EXP 	grating100or50: autoDraw = False
+36.0063 	EXP 	polygonHorizontal: autoDraw = False
+36.0063 	EXP 	polygonVertical: autoDraw = False
+36.0063 	EXP 	grating100or50: autoDraw = False
+36.0063 	EXP 	polygonHorizontal: autoDraw = True
+36.0063 	EXP 	polygonVertical: autoDraw = True
+37.0064 	INFO 	Keyboard events cleared
+37.0063 	EXP 	polygonHorizontal: autoDraw = False
+37.0063 	EXP 	polygonVertical: autoDraw = False
+37.0063 	EXP 	grating100or50: autoDraw = True
+39.9899 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'position': (15, 0), 'grating': 1, 'size': (7, 7), 'correct_ans': 's', 'fixation_pos': (0, 0), 'fixation_size': 1, 'fixation_width': 0.08, 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+40.0061 	EXP 	grating100or50: autoDraw = False
+40.0061 	EXP 	polygonHorizontal: autoDraw = False
+40.0061 	EXP 	polygonVertical: autoDraw = False
+40.0061 	EXP 	grating100or50: autoDraw = False
+40.0061 	EXP 	polygonHorizontal: autoDraw = True
+40.0061 	EXP 	polygonVertical: autoDraw = True
+41.0066 	INFO 	Keyboard events cleared
+41.0065 	EXP 	polygonHorizontal: autoDraw = False
+41.0065 	EXP 	polygonVertical: autoDraw = False
+41.0065 	EXP 	grating100or50: autoDraw = True
+42.0104 	EXP 	Device response: <KeyPress from None: t=41.993986100002076, value=escape, duration=None>
+42.0112 	DATA 	Keypress: escape
+42.1064 	EXP 	Device response: <KeyPress from None: t=41.993986100002076, value=escape, duration=0.10964779999630991>
+42.1064 	EXP 	TrainingTask_Test: status = STOPPED
+42.1224 	EXP 	grating100or50: autoDraw = False
+42.1225 	EXP 	TrainingTask_Test: status = STOPPED
+42.1271 	INFO 	saved data to 'C:\\Users\\Asus\\Documents\\recursos\\facul4.2\\Tese\\TrainingTask_Test\\data\\952291_TrainingTask_Test_2026-07-17_15h00.24.828.csv'
+42.1288 	INFO 	saved data to C:\Users\Asus\Documents\recursos\facul4.2\Tese\TrainingTask_Test\data\952291_TrainingTask_Test_2026-07-17_15h00.24.828.psydat
+42.9106 	INFO 	Stopping keyboard key buffers.

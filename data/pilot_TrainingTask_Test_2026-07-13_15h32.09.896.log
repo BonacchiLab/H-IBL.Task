@@ -1,0 +1,107 @@
+7.5677 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+7.5688 	INFO 	Loaded monitor calibration from ['2026_03_19 21:58']
+7.8412 	INFO 	Using renderer 'Intel(R) UHD Graphics 620' for graphics
+7.8412 	INFO 	OpenGL version supported by driver is 4..
+8.4840 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000027FD8F283A0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000027FD8F28400>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000027FD16627D0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(283.0), np.float64(84.0)], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.4841 	EXP 	window1: backgroundImage = ''
+8.4841 	EXP 	window1: backgroundFit = 'none'
+8.5160 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.5319 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.5474 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.5628 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.5783 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.5934 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6087 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6240 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6394 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6540 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6696 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6846 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6994 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7143 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7293 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7443 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7594 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7741 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7889 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8042 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8196 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8200 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.8283 	DEBUG 	Upload of Texture Font fontname complete
+8.8586 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8740 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8892 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8895 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.9022 	DEBUG 	Upload of Texture Font fontname complete
+8.9052 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.9053 	EXP 	window1: recordFrameIntervals = False
+9.1043 	EXP 	window1: recordFrameIntervals = True
+10.7708 	EXP 	window1: recordFrameIntervals = False
+10.7709 	EXP 	Screen (0) actual frame rate measured at 59.96Hz
+10.8060 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.8214 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.8375 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.8529 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.8683 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.8835 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.8985 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.9137 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.9290 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.9443 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.9447 	DEBUG 	Uploading Texture Font fontname to graphics card
+10.9454 	DEBUG 	Upload of Texture Font fontname complete
+11.0316 	INFO 	keyboard.Keyboard is using ptb backend.
+11.0316 	EXP 	TrainingTask_Test: status = STARTED
+11.1282 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.1295 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.1532 	EXP 	Created grating_2 = GratingStim(__class__=<class 'psychopy.visual.grating.GratingStim'>, anchor='center', autoDraw=False, autoLog=True, blendmode='avg', color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, interpolate=True, mask='gauss', maskParams=None, name='grating_2', opacity=1.0, ori=0.0, phase=array([0., 0.]), pos=array([0., 0.]), rgbPedestal=array([0., 0., 0.]), sf=array([1., 1.]), size=array([1., 1.]), tex='sin', texRes=128.0, units='height', win=Window(...))
+11.1544 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.1616 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Obrigado pela sua participação', units='height', win=Window(...), wrapWidth=1)
+0.0252 	INFO 	Keyboard events cleared
+0.0251 	EXP 	text: autoDraw = True
+1.2677 	EXP 	Device response: <KeyPress from None: t=1.1536651998758316, value=space, duration=None>
+1.2679 	EXP 	Device response: <KeyPress from None: t=1.1536651998758316, value=space, duration=0.048361499793827534>
+1.2693 	DATA 	Keypress: space
+1.2755 	EXP 	text: autoDraw = False
+1.2755 	EXP 	text_3: autoDraw = True
+5.2683 	DEBUG 	Read excel file with openpyxl: Grating_tt_test.xlsx
+5.2710 	EXP 	Imported Grating_tt_test.xlsx as conditions, 30 conditions, 3 params
+5.3043 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'position': (0.5, 0), 'grating': 50, 'size': (0.3, 0.3), 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+5.3284 	EXP 	text_3: autoDraw = False
+5.3284 	EXP 	text_3: autoDraw = False
+5.3284 	EXP 	grating_2: autoDraw = True
+5.3284 	EXP 	grating_2: tex = 'sin'
+7.2794 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'position': (-0.5, 0), 'grating': 50, 'size': (0.3, 0.3), 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+7.2923 	EXP 	grating_2: autoDraw = False
+7.2923 	EXP 	grating_2: autoDraw = True
+9.2789 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'position': (0.5, 0), 'grating': 100, 'size': (0.3, 0.3), 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+9.2926 	EXP 	grating_2: autoDraw = False
+9.2926 	EXP 	grating_2: autoDraw = True
+11.2779 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'position': (0.5, 0), 'grating': 100, 'size': (0.3, 0.3), 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+11.2920 	EXP 	grating_2: autoDraw = False
+11.2920 	EXP 	grating_2: autoDraw = True
+13.2795 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'position': (-0.5, 0), 'grating': 50, 'size': (0.3, 0.3), 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+13.2920 	EXP 	grating_2: autoDraw = False
+13.2920 	EXP 	grating_2: autoDraw = True
+15.2804 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'position': (0.5, 0), 'grating': 50, 'size': (0.3, 0.3), 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+15.2922 	EXP 	grating_2: autoDraw = False
+15.2922 	EXP 	grating_2: autoDraw = True
+17.2782 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'position': (0.5, 0), 'grating': 100, 'size': (0.3, 0.3), 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+17.2921 	EXP 	grating_2: autoDraw = False
+17.2921 	EXP 	grating_2: autoDraw = True
+19.2785 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'position': (0.5, 0), 'grating': 50, 'size': (0.3, 0.3), 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+19.2921 	EXP 	grating_2: autoDraw = False
+19.2921 	EXP 	grating_2: autoDraw = True
+21.2771 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'position': (-0.5, 0), 'grating': 50, 'size': (0.3, 0.3), 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+21.2914 	EXP 	grating_2: autoDraw = False
+21.2914 	EXP 	grating_2: autoDraw = True
+22.5607 	EXP 	Device response: <KeyPress from None: t=22.546679699793458, value=escape, duration=None>
+22.5611 	DATA 	Keypress: escape
+22.6768 	EXP 	Device response: <KeyPress from None: t=22.546679699793458, value=escape, duration=0.1146900998428464>
+22.6769 	EXP 	TrainingTask_Test: status = STOPPED
+22.6915 	EXP 	grating_2: autoDraw = False
+22.6938 	EXP 	TrainingTask_Test: status = STOPPED
+22.6970 	INFO 	saved data to 'C:\\Users\\Asus\\Documents\\recursos\\facul4.2\\Tese\\TrainingTask_Test\\data\\pilot_TrainingTask_Test_2026-07-13_15h32.09.896.csv'
+22.6990 	INFO 	saved data to C:\Users\Asus\Documents\recursos\facul4.2\Tese\TrainingTask_Test\data\pilot_TrainingTask_Test_2026-07-13_15h32.09.896.psydat
+24.3560 	DEBUG 	Saving data for TrainingTask_Test ExperimentHandler
+24.3584 	INFO 	Stopping keyboard key buffers.

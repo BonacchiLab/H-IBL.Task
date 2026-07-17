@@ -1,0 +1,63 @@
+6.8911 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+6.8922 	INFO 	Loaded monitor calibration from ['2026_03_19 21:58']
+7.1411 	INFO 	Using renderer 'Intel(R) UHD Graphics 620' for graphics
+7.1411 	INFO 	OpenGL version supported by driver is 4..
+7.7829 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002A169E50730>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002A169E52290>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002A171D519C0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(283.0), np.float64(84.0)], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.7830 	EXP 	window1: backgroundImage = ''
+7.7830 	EXP 	window1: backgroundFit = 'none'
+7.8130 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8276 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8422 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8571 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8718 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.8862 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9014 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9167 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9306 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9449 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9603 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9750 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.9899 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0046 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0192 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0338 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0488 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0631 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0772 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.0921 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1062 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1066 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.1114 	DEBUG 	Upload of Texture Font fontname complete
+8.1392 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1541 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1689 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1693 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.1744 	DEBUG 	Upload of Texture Font fontname complete
+8.1765 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.1765 	EXP 	window1: recordFrameIntervals = False
+8.3514 	EXP 	window1: recordFrameIntervals = True
+10.0185 	EXP 	window1: recordFrameIntervals = False
+10.0185 	EXP 	Screen (0) actual frame rate measured at 59.90Hz
+10.0622 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.0767 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.0915 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.1066 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.1217 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.1367 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.1510 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.1658 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.1806 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.1954 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+10.1958 	DEBUG 	Uploading Texture Font fontname to graphics card
+10.1965 	DEBUG 	Upload of Texture Font fontname complete
+10.2713 	INFO 	keyboard.Keyboard is using ptb backend.
+10.2713 	EXP 	TrainingTask_Test: status = STARTED
+10.9556 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.9568 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+10.9813 	INFO 	Using joystick interface 'JoystickInterfacePyglet' for backend 'pyglet'
+10.9919 	ERROR 	You don't have that many joysticks attached (remember that the first joystick has deviceIndex=0 etc...)
+10.9920 	ERROR 	No joystick/gamepad device found.
+11.3556 	DEBUG 	Saving data for TrainingTask_Test ExperimentHandler
+11.3567 	INFO 	saved data to C:\Users\Asus\Documents\recursos\facul4.2\Tese\TrainingTask_Test\data\pilot_TrainingTask_Test_2026-07-15_13h36.38.542.psydat
+11.3578 	INFO 	saved data to 'C:\\Users\\Asus\\Documents\\recursos\\facul4.2\\Tese\\TrainingTask_Test\\data\\pilot_TrainingTask_Test_2026-07-15_13h36.38.542.csv'
+11.3624 	INFO 	Stopping keyboard key buffers.

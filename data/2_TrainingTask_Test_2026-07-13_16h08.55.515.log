@@ -1,0 +1,348 @@
+8.7490 	INFO 	Loaded monitor calibration from ['2026_03_19 21:58']
+8.7603 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1366, 768]. Using actual size
+9.1586 	INFO 	Using renderer 'Intel(R) UHD Graphics 620' for graphics
+9.1586 	INFO 	OpenGL version supported by driver is 4..
+9.8240 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D789413CD0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D789410430>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001D7830A8DC0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([1366,  768]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.8241 	EXP 	window1: backgroundImage = ''
+9.8241 	EXP 	window1: backgroundFit = 'none'
+10.2461 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+10.2461 	EXP 	window1: recordFrameIntervals = False
+10.4264 	EXP 	window1: recordFrameIntervals = True
+12.0935 	EXP 	window1: recordFrameIntervals = False
+12.0936 	EXP 	Screen (0) actual frame rate measured at 59.81Hz
+12.1939 	INFO 	keyboard.Keyboard is using ptb backend.
+12.1940 	EXP 	TrainingTask_Test: status = STARTED
+12.2990 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.3001 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+12.3045 	EXP 	Created polygonCenter = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=0.1, name='polygonCenter', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+12.3285 	EXP 	Created grating100or50 = GratingStim(__class__=<class 'psychopy.visual.grating.GratingStim'>, anchor='center', autoDraw=False, autoLog=True, blendmode='avg', color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, interpolate=True, mask='gauss', maskParams=None, name='grating100or50', opacity=0.5, ori=0.0, phase=array([0., 0.]), pos=array([0., 0.]), rgbPedestal=array([0., 0., 0.]), sf=array([1., 1.]), size=array([1., 1.]), tex='sin', texRes=128.0, units='height', win=Window(...))
+12.3297 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+12.3376 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Obrigado pela sua participação', units='height', win=Window(...), wrapWidth=1)
+0.0108 	EXP 	Imported Grating_tt_test.xlsx as conditions, 30 conditions, 4 params
+0.0113 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'position': (-0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0148 	INFO 	Keyboard events cleared
+0.0147 	EXP 	text: autoDraw = True
+0.0147 	EXP 	text: autoDraw = False
+0.0147 	EXP 	text: autoDraw = False
+0.0147 	EXP 	text_3: autoDraw = True
+0.0147 	EXP 	text_3: autoDraw = False
+0.0147 	EXP 	text_3: autoDraw = False
+0.0147 	EXP 	polygonCenter: autoDraw = True
+1.0053 	INFO 	Keyboard events cleared
+1.0052 	EXP 	grating100or50: autoDraw = True
+1.0052 	EXP 	grating100or50: tex = 'sin'
+1.0223 	EXP 	polygonCenter: autoDraw = False
+2.9514 	EXP 	Device response: <KeyPress from None: t=2.926359700039029, value=s, duration=None>
+2.9516 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'position': (-0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+2.9526 	DATA 	Keypress: s
+2.9548 	EXP 	polygonCenter: autoDraw = False
+2.9548 	EXP 	grating100or50: autoDraw = False
+2.9548 	EXP 	polygonCenter: autoDraw = True
+3.0563 	EXP 	Device response: <KeyPress from None: t=2.926359700039029, value=s, duration=0.1248292000964284>
+3.9559 	INFO 	Keyboard events cleared
+3.9557 	EXP 	polygonCenter: autoDraw = False
+3.9557 	EXP 	grating100or50: autoDraw = True
+4.3054 	EXP 	Device response: <KeyPress from None: t=4.2941784001886845, value=l, duration=None>
+4.3058 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'position': (0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+4.3077 	DATA 	Keypress: l
+4.3219 	EXP 	polygonCenter: autoDraw = False
+4.3219 	EXP 	grating100or50: autoDraw = False
+4.3219 	EXP 	polygonCenter: autoDraw = True
+4.4063 	EXP 	Device response: <KeyPress from None: t=4.2941784001886845, value=l, duration=0.11007549986243248>
+5.3049 	INFO 	Keyboard events cleared
+5.3048 	EXP 	grating100or50: autoDraw = True
+5.3218 	EXP 	polygonCenter: autoDraw = False
+5.5729 	EXP 	Device response: <KeyPress from None: t=5.56799599993974, value=l, duration=None>
+5.5735 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'position': (-0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+5.5765 	DATA 	Keypress: l
+5.5884 	EXP 	polygonCenter: autoDraw = False
+5.5884 	EXP 	grating100or50: autoDraw = False
+5.5884 	EXP 	polygonCenter: autoDraw = True
+5.6718 	EXP 	Device response: <KeyPress from None: t=5.56799599993974, value=l, duration=0.09901830041781068>
+6.5887 	INFO 	Keyboard events cleared
+6.5884 	EXP 	polygonCenter: autoDraw = False
+6.5884 	EXP 	grating100or50: autoDraw = True
+6.8076 	DATA 	Keypress: s
+6.8229 	EXP 	Device response: <KeyPress from None: t=6.805672500282526, value=s, duration=None>
+6.8237 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'position': (0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+6.8383 	EXP 	polygonCenter: autoDraw = False
+6.8383 	EXP 	grating100or50: autoDraw = False
+6.8383 	EXP 	polygonCenter: autoDraw = True
+6.9392 	EXP 	Device response: <KeyPress from None: t=6.805672500282526, value=s, duration=0.11947599984705448>
+7.8393 	INFO 	Keyboard events cleared
+7.8390 	EXP 	polygonCenter: autoDraw = False
+7.8390 	EXP 	grating100or50: autoDraw = True
+8.1233 	EXP 	Device response: <KeyPress from None: t=8.115799200255424, value=l, duration=None>
+8.1239 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'position': (0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+8.1270 	DATA 	Keypress: l
+8.1381 	EXP 	polygonCenter: autoDraw = False
+8.1381 	EXP 	grating100or50: autoDraw = False
+8.1381 	EXP 	polygonCenter: autoDraw = True
+8.2218 	EXP 	Device response: <KeyPress from None: t=8.115799200255424, value=l, duration=0.09369880007579923>
+9.1388 	INFO 	Keyboard events cleared
+9.1385 	EXP 	polygonCenter: autoDraw = False
+9.1385 	EXP 	grating100or50: autoDraw = True
+9.4221 	EXP 	Device response: <KeyPress from None: t=9.416663300246, value=l, duration=None>
+9.4225 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'position': (0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+9.4243 	DATA 	Keypress: l
+9.4380 	EXP 	polygonCenter: autoDraw = False
+9.4380 	EXP 	grating100or50: autoDraw = False
+9.4380 	EXP 	polygonCenter: autoDraw = True
+9.5212 	EXP 	Device response: <KeyPress from None: t=9.416663300246, value=l, duration=0.0961561999283731>
+10.4220 	INFO 	Keyboard events cleared
+10.4218 	EXP 	grating100or50: autoDraw = True
+10.4384 	EXP 	polygonCenter: autoDraw = False
+10.7051 	EXP 	Device response: <KeyPress from None: t=10.704646999947727, value=l, duration=None>
+10.7054 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'position': (0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+10.7068 	DATA 	Keypress: l
+10.7217 	EXP 	polygonCenter: autoDraw = False
+10.7217 	EXP 	grating100or50: autoDraw = False
+10.7217 	EXP 	polygonCenter: autoDraw = True
+10.8057 	EXP 	Device response: <KeyPress from None: t=10.704646999947727, value=l, duration=0.0998505000025034>
+11.7216 	INFO 	Keyboard events cleared
+11.7215 	EXP 	polygonCenter: autoDraw = False
+11.7215 	EXP 	grating100or50: autoDraw = True
+11.9724 	EXP 	Device response: <KeyPress from None: t=11.968152800109237, value=l, duration=None>
+11.9730 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'position': (0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+11.9759 	DATA 	Keypress: l
+11.9884 	EXP 	polygonCenter: autoDraw = False
+11.9884 	EXP 	grating100or50: autoDraw = False
+11.9884 	EXP 	polygonCenter: autoDraw = True
+12.0890 	EXP 	Device response: <KeyPress from None: t=11.968152800109237, value=l, duration=0.10981310019269586>
+12.9886 	INFO 	Keyboard events cleared
+12.9884 	EXP 	polygonCenter: autoDraw = False
+12.9884 	EXP 	grating100or50: autoDraw = True
+13.2582 	DATA 	Keypress: l
+13.2726 	EXP 	Device response: <KeyPress from None: t=13.256481199990958, value=l, duration=None>
+13.2732 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'position': (-0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+13.2884 	EXP 	polygonCenter: autoDraw = False
+13.2884 	EXP 	grating100or50: autoDraw = False
+13.2884 	EXP 	polygonCenter: autoDraw = True
+13.3718 	EXP 	Device response: <KeyPress from None: t=13.256481199990958, value=l, duration=0.1040810002014041>
+14.2887 	INFO 	Keyboard events cleared
+14.2885 	EXP 	polygonCenter: autoDraw = False
+14.2885 	EXP 	grating100or50: autoDraw = True
+14.5386 	EXP 	Device response: <KeyPress from None: t=14.534913900308311, value=s, duration=None>
+14.5392 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'position': (-0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+14.5426 	DATA 	Keypress: s
+14.5551 	EXP 	polygonCenter: autoDraw = False
+14.5551 	EXP 	grating100or50: autoDraw = False
+14.5551 	EXP 	polygonCenter: autoDraw = True
+14.6718 	EXP 	Device response: <KeyPress from None: t=14.534913900308311, value=s, duration=0.12442069966346025>
+15.5387 	INFO 	Keyboard events cleared
+15.5385 	EXP 	grating100or50: autoDraw = True
+15.5550 	EXP 	polygonCenter: autoDraw = False
+15.8391 	EXP 	Device response: <KeyPress from None: t=15.837293399963528, value=s, duration=None>
+15.8399 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'position': (-0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+15.8428 	DATA 	Keypress: s
+15.8544 	EXP 	polygonCenter: autoDraw = False
+15.8544 	EXP 	grating100or50: autoDraw = False
+15.8544 	EXP 	polygonCenter: autoDraw = True
+15.9709 	EXP 	Device response: <KeyPress from None: t=15.837293399963528, value=s, duration=0.1197251002304256>
+16.8389 	INFO 	Keyboard events cleared
+16.8386 	EXP 	grating100or50: autoDraw = True
+16.8545 	EXP 	polygonCenter: autoDraw = False
+17.1215 	EXP 	Device response: <KeyPress from None: t=17.111291900277138, value=s, duration=None>
+17.1216 	EXP 	New trial (rep=0, index=12): <Trial 12 (12 in rep 0) data={'position': (-0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 12, 'thisTrialN': 12, 'thisRepN': 0}>
+17.1224 	DATA 	Keypress: s
+17.1377 	EXP 	polygonCenter: autoDraw = False
+17.1377 	EXP 	grating100or50: autoDraw = False
+17.1377 	EXP 	polygonCenter: autoDraw = True
+17.2385 	EXP 	Device response: <KeyPress from None: t=17.111291900277138, value=s, duration=0.11389259994029999>
+18.1209 	INFO 	Keyboard events cleared
+18.1208 	EXP 	grating100or50: autoDraw = True
+18.1373 	EXP 	polygonCenter: autoDraw = False
+18.4558 	EXP 	Device response: <KeyPress from None: t=18.449124800041318, value=s, duration=None>
+18.4564 	EXP 	New trial (rep=0, index=13): <Trial 13 (13 in rep 0) data={'position': (-0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 13, 'thisTrialN': 13, 'thisRepN': 0}>
+18.4596 	DATA 	Keypress: s
+18.4720 	EXP 	polygonCenter: autoDraw = False
+18.4720 	EXP 	grating100or50: autoDraw = False
+18.4720 	EXP 	polygonCenter: autoDraw = True
+18.5721 	EXP 	Device response: <KeyPress from None: t=18.449124800041318, value=s, duration=0.10927140014246106>
+19.4717 	INFO 	Keyboard events cleared
+19.4715 	EXP 	polygonCenter: autoDraw = False
+19.4715 	EXP 	grating100or50: autoDraw = True
+19.7240 	DATA 	Keypress: s
+19.7389 	EXP 	Device response: <KeyPress from None: t=19.72219130024314, value=s, duration=None>
+19.7397 	EXP 	New trial (rep=0, index=14): <Trial 14 (14 in rep 0) data={'position': (0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 14, 'thisTrialN': 14, 'thisRepN': 0}>
+19.7547 	EXP 	polygonCenter: autoDraw = False
+19.7547 	EXP 	grating100or50: autoDraw = False
+19.7547 	EXP 	polygonCenter: autoDraw = True
+19.8380 	EXP 	Device response: <KeyPress from None: t=19.72219130024314, value=s, duration=0.10918299993500113>
+20.7546 	INFO 	Keyboard events cleared
+20.7544 	EXP 	polygonCenter: autoDraw = False
+20.7544 	EXP 	grating100or50: autoDraw = True
+21.0724 	EXP 	Device response: <KeyPress from None: t=21.064941900316626, value=l, duration=None>
+21.0730 	EXP 	New trial (rep=0, index=15): <Trial 15 (15 in rep 0) data={'position': (0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 15, 'thisTrialN': 15, 'thisRepN': 0}>
+21.0764 	DATA 	Keypress: l
+21.0879 	EXP 	polygonCenter: autoDraw = False
+21.0879 	EXP 	grating100or50: autoDraw = False
+21.0879 	EXP 	polygonCenter: autoDraw = True
+21.1716 	EXP 	Device response: <KeyPress from None: t=21.064941900316626, value=l, duration=0.10523989982903004>
+22.0881 	INFO 	Keyboard events cleared
+22.0880 	EXP 	polygonCenter: autoDraw = False
+22.0880 	EXP 	grating100or50: autoDraw = True
+22.3887 	EXP 	Device response: <KeyPress from None: t=22.378460899926722, value=l, duration=None>
+22.3896 	EXP 	New trial (rep=0, index=16): <Trial 16 (16 in rep 0) data={'position': (-0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 16, 'thisTrialN': 16, 'thisRepN': 0}>
+22.3931 	DATA 	Keypress: l
+22.4046 	EXP 	polygonCenter: autoDraw = False
+22.4046 	EXP 	grating100or50: autoDraw = False
+22.4046 	EXP 	polygonCenter: autoDraw = True
+22.4877 	EXP 	Device response: <KeyPress from None: t=22.378460899926722, value=l, duration=0.09843940008431673>
+23.4046 	INFO 	Keyboard events cleared
+23.4044 	EXP 	polygonCenter: autoDraw = False
+23.4044 	EXP 	grating100or50: autoDraw = True
+23.6375 	EXP 	Device response: <KeyPress from None: t=23.635687600355595, value=s, duration=None>
+23.6377 	EXP 	New trial (rep=0, index=17): <Trial 17 (17 in rep 0) data={'position': (-0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 17, 'thisTrialN': 17, 'thisRepN': 0}>
+23.6385 	DATA 	Keypress: s
+23.6535 	EXP 	polygonCenter: autoDraw = False
+23.6535 	EXP 	grating100or50: autoDraw = False
+23.6535 	EXP 	polygonCenter: autoDraw = True
+23.7550 	EXP 	Device response: <KeyPress from None: t=23.635687600355595, value=s, duration=0.11055989982560277>
+24.6369 	INFO 	Keyboard events cleared
+24.6368 	EXP 	grating100or50: autoDraw = True
+24.6537 	EXP 	polygonCenter: autoDraw = False
+24.9221 	EXP 	Device response: <KeyPress from None: t=24.914672300219536, value=s, duration=None>
+24.9227 	EXP 	New trial (rep=0, index=18): <Trial 18 (18 in rep 0) data={'position': (0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 18, 'thisTrialN': 18, 'thisRepN': 0}>
+24.9257 	DATA 	Keypress: s
+24.9379 	EXP 	polygonCenter: autoDraw = False
+24.9379 	EXP 	grating100or50: autoDraw = False
+24.9379 	EXP 	polygonCenter: autoDraw = True
+25.0549 	EXP 	Device response: <KeyPress from None: t=24.914672300219536, value=s, duration=0.12375849997624755>
+25.1708 	EXP 	Device response: <KeyPress from None: t=25.169243900105357, value=a, duration=None>
+25.1713 	DATA 	Keypress: a
+25.3048 	EXP 	Device response: <KeyPress from None: t=25.169243900105357, value=a, duration=0.12461270019412041>
+25.9384 	INFO 	Keyboard events cleared
+25.9381 	EXP 	polygonCenter: autoDraw = False
+25.9381 	EXP 	grating100or50: autoDraw = True
+26.2374 	EXP 	Device response: <KeyPress from None: t=26.236744100227952, value=l, duration=None>
+26.2377 	EXP 	New trial (rep=0, index=19): <Trial 19 (19 in rep 0) data={'position': (-0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 19, 'thisTrialN': 19, 'thisRepN': 0}>
+26.2389 	DATA 	Keypress: l
+26.2540 	EXP 	polygonCenter: autoDraw = False
+26.2540 	EXP 	grating100or50: autoDraw = False
+26.2540 	EXP 	polygonCenter: autoDraw = True
+26.3381 	EXP 	Device response: <KeyPress from None: t=26.236744100227952, value=l, duration=0.09076600009575486>
+27.2541 	INFO 	Keyboard events cleared
+27.2540 	EXP 	polygonCenter: autoDraw = False
+27.2540 	EXP 	grating100or50: autoDraw = True
+27.5048 	EXP 	Device response: <KeyPress from None: t=27.496075599920005, value=s, duration=None>
+27.5054 	EXP 	New trial (rep=0, index=20): <Trial 20 (20 in rep 0) data={'position': (0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 20, 'thisTrialN': 20, 'thisRepN': 0}>
+27.5088 	DATA 	Keypress: s
+27.5209 	EXP 	polygonCenter: autoDraw = False
+27.5209 	EXP 	grating100or50: autoDraw = False
+27.5209 	EXP 	polygonCenter: autoDraw = True
+27.6211 	EXP 	Device response: <KeyPress from None: t=27.496075599920005, value=s, duration=0.11412780033424497>
+28.5042 	INFO 	Keyboard events cleared
+28.5041 	EXP 	grating100or50: autoDraw = True
+28.5209 	EXP 	polygonCenter: autoDraw = False
+28.7543 	EXP 	Device response: <KeyPress from None: t=28.748536699917167, value=l, duration=None>
+28.7544 	EXP 	New trial (rep=0, index=21): <Trial 21 (21 in rep 0) data={'position': (-0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 21, 'thisTrialN': 21, 'thisRepN': 0}>
+28.7554 	DATA 	Keypress: l
+28.7706 	EXP 	polygonCenter: autoDraw = False
+28.7706 	EXP 	grating100or50: autoDraw = False
+28.7706 	EXP 	polygonCenter: autoDraw = True
+28.8550 	EXP 	Device response: <KeyPress from None: t=28.748536699917167, value=l, duration=0.10023190034553409>
+29.7543 	INFO 	Keyboard events cleared
+29.7540 	EXP 	grating100or50: autoDraw = True
+29.7711 	EXP 	polygonCenter: autoDraw = False
+30.0204 	EXP 	Device response: <KeyPress from None: t=30.010916800238192, value=s, duration=None>
+30.0205 	EXP 	New trial (rep=0, index=22): <Trial 22 (22 in rep 0) data={'position': (-0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 22, 'thisTrialN': 22, 'thisRepN': 0}>
+30.0214 	DATA 	Keypress: s
+30.0365 	EXP 	polygonCenter: autoDraw = False
+30.0365 	EXP 	grating100or50: autoDraw = False
+30.0365 	EXP 	polygonCenter: autoDraw = True
+30.1206 	EXP 	Device response: <KeyPress from None: t=30.010916800238192, value=s, duration=0.09618839994072914>
+31.0209 	INFO 	Keyboard events cleared
+31.0207 	EXP 	grating100or50: autoDraw = True
+31.0372 	EXP 	polygonCenter: autoDraw = False
+31.2713 	EXP 	Device response: <KeyPress from None: t=31.26026639994234, value=l, duration=None>
+31.2720 	EXP 	New trial (rep=0, index=23): <Trial 23 (23 in rep 0) data={'position': (0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 23, 'thisTrialN': 23, 'thisRepN': 0}>
+31.2757 	DATA 	Keypress: l
+31.2874 	EXP 	polygonCenter: autoDraw = False
+31.2874 	EXP 	grating100or50: autoDraw = False
+31.2874 	EXP 	polygonCenter: autoDraw = True
+31.3212 	EXP 	Device response: <KeyPress from None: t=31.26026639994234, value=l, duration=0.044220900163054466>
+31.3379 	EXP 	Device response: <KeyPress from None: t=31.329971600323915, value=s, duration=None>
+31.3395 	DATA 	Keypress: s
+31.4543 	EXP 	Device response: <KeyPress from None: t=31.329971600323915, value=s, duration=0.11468759970739484>
+32.2877 	INFO 	Keyboard events cleared
+32.2875 	EXP 	polygonCenter: autoDraw = False
+32.2875 	EXP 	grating100or50: autoDraw = True
+32.5215 	EXP 	Device response: <KeyPress from None: t=32.5078992000781, value=l, duration=None>
+32.5222 	EXP 	New trial (rep=0, index=24): <Trial 24 (24 in rep 0) data={'position': (0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 24, 'thisTrialN': 24, 'thisRepN': 0}>
+32.5256 	DATA 	Keypress: l
+32.5378 	EXP 	polygonCenter: autoDraw = False
+32.5378 	EXP 	grating100or50: autoDraw = False
+32.5378 	EXP 	polygonCenter: autoDraw = True
+32.6211 	EXP 	Device response: <KeyPress from None: t=32.5078992000781, value=l, duration=0.11018359987065196>
+33.5379 	INFO 	Keyboard events cleared
+33.5376 	EXP 	polygonCenter: autoDraw = False
+33.5376 	EXP 	grating100or50: autoDraw = True
+33.8215 	EXP 	Device response: <KeyPress from None: t=33.81696749990806, value=l, duration=None>
+33.8222 	EXP 	New trial (rep=0, index=25): <Trial 25 (25 in rep 0) data={'position': (-0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 25, 'thisTrialN': 25, 'thisRepN': 0}>
+33.8258 	DATA 	Keypress: l
+33.8374 	EXP 	polygonCenter: autoDraw = False
+33.8374 	EXP 	grating100or50: autoDraw = False
+33.8374 	EXP 	polygonCenter: autoDraw = True
+33.9377 	EXP 	Device response: <KeyPress from None: t=33.81696749990806, value=l, duration=0.10905620036646724>
+34.8365 	INFO 	Keyboard events cleared
+34.8364 	EXP 	grating100or50: autoDraw = True
+34.8530 	EXP 	polygonCenter: autoDraw = False
+35.0868 	EXP 	Device response: <KeyPress from None: t=35.08493630029261, value=s, duration=None>
+35.0870 	EXP 	New trial (rep=0, index=26): <Trial 26 (26 in rep 0) data={'position': (0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 26, 'thisTrialN': 26, 'thisRepN': 0}>
+35.0878 	DATA 	Keypress: s
+35.1029 	EXP 	polygonCenter: autoDraw = False
+35.1029 	EXP 	grating100or50: autoDraw = False
+35.1029 	EXP 	polygonCenter: autoDraw = True
+35.2199 	EXP 	Device response: <KeyPress from None: t=35.08493630029261, value=s, duration=0.12316289963200688>
+36.0881 	INFO 	Keyboard events cleared
+36.0879 	EXP 	grating100or50: autoDraw = True
+36.1040 	EXP 	polygonCenter: autoDraw = False
+36.3381 	EXP 	Device response: <KeyPress from None: t=36.33717379998416, value=l, duration=None>
+36.3387 	EXP 	New trial (rep=0, index=27): <Trial 27 (27 in rep 0) data={'position': (-0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 27, 'thisTrialN': 27, 'thisRepN': 0}>
+36.3430 	DATA 	Keypress: l
+36.3537 	EXP 	polygonCenter: autoDraw = False
+36.3537 	EXP 	grating100or50: autoDraw = False
+36.3537 	EXP 	polygonCenter: autoDraw = True
+36.4209 	EXP 	Device response: <KeyPress from None: t=36.33717379998416, value=l, duration=0.08070220006629825>
+37.3540 	INFO 	Keyboard events cleared
+37.3537 	EXP 	polygonCenter: autoDraw = False
+37.3537 	EXP 	grating100or50: autoDraw = True
+37.6200 	EXP 	Device response: <KeyPress from None: t=37.61520790029317, value=s, duration=None>
+37.6202 	EXP 	New trial (rep=0, index=28): <Trial 28 (28 in rep 0) data={'position': (0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 28, 'thisTrialN': 28, 'thisRepN': 0}>
+37.6210 	DATA 	Keypress: s
+37.6364 	EXP 	polygonCenter: autoDraw = False
+37.6364 	EXP 	grating100or50: autoDraw = False
+37.6364 	EXP 	polygonCenter: autoDraw = True
+37.7375 	EXP 	Device response: <KeyPress from None: t=37.61520790029317, value=s, duration=0.11028359970077872>
+38.6196 	INFO 	Keyboard events cleared
+38.6195 	EXP 	grating100or50: autoDraw = True
+38.6362 	EXP 	polygonCenter: autoDraw = False
+38.8546 	EXP 	Device response: <KeyPress from None: t=38.84429750032723, value=l, duration=None>
+38.8552 	EXP 	New trial (rep=0, index=29): <Trial 29 (29 in rep 0) data={'position': (0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 29, 'thisTrialN': 29, 'thisRepN': 0}>
+38.8586 	DATA 	Keypress: l
+38.8703 	EXP 	polygonCenter: autoDraw = False
+38.8703 	EXP 	grating100or50: autoDraw = False
+38.8703 	EXP 	polygonCenter: autoDraw = True
+38.9375 	EXP 	Device response: <KeyPress from None: t=38.84429750032723, value=l, duration=0.0837067998945713>
+39.8710 	INFO 	Keyboard events cleared
+39.8708 	EXP 	polygonCenter: autoDraw = False
+39.8708 	EXP 	grating100or50: autoDraw = True
+40.1214 	EXP 	Device response: <KeyPress from None: t=40.113365600351244, value=s, duration=None>
+40.1287 	DATA 	Keypress: s
+40.1370 	EXP 	polygonCenter: autoDraw = False
+40.1370 	EXP 	grating100or50: autoDraw = False
+40.1370 	EXP 	text_3: autoDraw = True
+40.1370 	EXP 	text_3: autoDraw = False
+40.1370 	EXP 	text_3: autoDraw = False
+40.1370 	EXP 	text_2: autoDraw = True
+40.2038 	EXP 	Device response: <KeyPress from None: t=40.113365600351244, value=s, duration=0.07808549981564283>
+40.2205 	EXP 	Device response: <KeyPress from None: t=40.21171300020069, value=l, duration=None>
+40.2222 	DATA 	Keypress: l
+40.3204 	EXP 	Device response: <KeyPress from None: t=40.21171300020069, value=l, duration=0.09958439972251654>
+42.1366 	EXP 	text_2: autoDraw = False
+42.1366 	EXP 	text_2: autoDraw = False
+42.1369 	EXP 	TrainingTask_Test: status = STOPPED
+42.1665 	INFO 	saved data to 'C:\\Users\\Asus\\Documents\\recursos\\facul4.2\\Tese\\TrainingTask_Test\\data\\2_TrainingTask_Test_2026-07-13_16h08.55.515.csv'
+42.1678 	INFO 	saved data to C:\Users\Asus\Documents\recursos\facul4.2\Tese\TrainingTask_Test\data\2_TrainingTask_Test_2026-07-13_16h08.55.515.psydat
+42.8655 	INFO 	Stopping keyboard key buffers.

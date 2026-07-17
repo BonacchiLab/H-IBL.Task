@@ -1,0 +1,51 @@
+10.0005 	INFO 	Loaded monitor calibration from ['2026_03_19 21:58']
+10.0132 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1366, 768]. Using actual size
+10.3848 	INFO 	Using renderer 'Intel(R) UHD Graphics 620' for graphics
+10.3848 	INFO 	OpenGL version supported by driver is 4..
+11.0700 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D741D65360>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D741D653C0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001D7400EFE20>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([1366,  768]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.0701 	EXP 	window1: backgroundImage = ''
+11.0701 	EXP 	window1: backgroundFit = 'none'
+11.4847 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+11.4848 	EXP 	window1: recordFrameIntervals = False
+11.6547 	EXP 	window1: recordFrameIntervals = True
+13.3218 	EXP 	window1: recordFrameIntervals = False
+13.3219 	EXP 	Screen (0) actual frame rate measured at 60.10Hz
+13.4227 	INFO 	keyboard.Keyboard is using ptb backend.
+13.4228 	EXP 	TrainingTask_Test: status = STARTED
+13.5308 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+13.5319 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.5359 	EXP 	Created polygonCenter = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=0.1, name='polygonCenter', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+13.5648 	EXP 	Created grating100or50 = GratingStim(__class__=<class 'psychopy.visual.grating.GratingStim'>, anchor='center', autoDraw=False, autoLog=True, blendmode='avg', color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, interpolate=True, mask='gauss', maskParams=None, name='grating100or50', opacity=0.5, ori=0.0, phase=array([0., 0.]), pos=array([0., 0.]), rgbPedestal=array([0., 0., 0.]), sf=array([1., 1.]), size=array([1., 1.]), tex='sin', texRes=256.0, units='height', win=Window(...))
+13.5661 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.5739 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Obrigado pela sua participação', units='height', win=Window(...), wrapWidth=1)
+0.0108 	EXP 	Imported Grating_tt_test.xlsx as conditions, 30 conditions, 4 params
+0.0112 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'position': (0.5, 0), 'grating': 0.5, 'size': (0.3, 0.3), 'correct_ans': 'l', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0148 	INFO 	Keyboard events cleared
+0.0148 	EXP 	text: autoDraw = True
+0.0148 	EXP 	text: autoDraw = False
+0.0148 	EXP 	text: autoDraw = False
+0.0148 	EXP 	text_3: autoDraw = True
+0.0148 	EXP 	text_3: autoDraw = False
+0.0148 	EXP 	text_3: autoDraw = False
+0.0148 	EXP 	polygonCenter: autoDraw = True
+1.0143 	INFO 	Keyboard events cleared
+1.0142 	EXP 	polygonCenter: autoDraw = False
+1.0142 	EXP 	grating100or50: autoDraw = True
+1.0142 	EXP 	grating100or50: tex = 'sin'
+3.9992 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'position': (-0.5, 0), 'grating': 1, 'size': (0.3, 0.3), 'correct_ans': 's', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+4.0151 	EXP 	grating100or50: autoDraw = False
+4.0151 	EXP 	polygonCenter: autoDraw = False
+4.0151 	EXP 	grating100or50: autoDraw = False
+4.0151 	EXP 	polygonCenter: autoDraw = True
+5.0144 	INFO 	Keyboard events cleared
+5.0143 	EXP 	grating100or50: autoDraw = True
+5.0314 	EXP 	polygonCenter: autoDraw = False
+5.1891 	EXP 	Device response: <KeyPress from None: t=5.172071900218725, value=escape, duration=None>
+5.1898 	DATA 	Keypress: escape
+5.2650 	EXP 	Device response: <KeyPress from None: t=5.172071900218725, value=escape, duration=0.08916709991171956>
+5.2653 	EXP 	TrainingTask_Test: status = STOPPED
+5.2812 	EXP 	grating100or50: autoDraw = False
+5.2816 	EXP 	TrainingTask_Test: status = STOPPED
+5.2960 	INFO 	saved data to 'C:\\Users\\Asus\\Documents\\recursos\\facul4.2\\Tese\\TrainingTask_Test\\data\\1_TrainingTask_Test_2026-07-13_16h24.42.255.csv'
+5.3005 	INFO 	saved data to C:\Users\Asus\Documents\recursos\facul4.2\Tese\TrainingTask_Test\data\1_TrainingTask_Test_2026-07-13_16h24.42.255.psydat
+5.9788 	INFO 	Stopping keyboard key buffers.

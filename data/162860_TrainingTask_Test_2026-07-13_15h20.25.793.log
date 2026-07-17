@@ -1,0 +1,65 @@
+7.3757 	INFO 	Loaded monitor calibration from ['2026_03_19 21:58']
+7.3893 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1366, 768]. Using actual size
+7.9308 	INFO 	Using renderer 'Intel(R) UHD Graphics 620' for graphics
+7.9309 	INFO 	OpenGL version supported by driver is 4..
+9.2140 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E894554550>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001E8945545B0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001E892AFB700>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([1366,  768]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.2141 	EXP 	window1: backgroundImage = ''
+9.2141 	EXP 	window1: backgroundFit = 'none'
+9.6962 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.6963 	EXP 	window1: recordFrameIntervals = False
+9.8723 	EXP 	window1: recordFrameIntervals = True
+11.5384 	EXP 	window1: recordFrameIntervals = False
+11.5385 	EXP 	Screen (0) actual frame rate measured at 60.08Hz
+11.6162 	INFO 	keyboard.Keyboard is using ptb backend.
+11.6163 	EXP 	TrainingTask_Test: status = STARTED
+11.7314 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+11.7325 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.7337 	EXP 	Created grating_2 = GratingStim(__class__=<class 'psychopy.visual.grating.GratingStim'>, anchor='center', autoDraw=False, autoLog=True, blendmode='avg', color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, interpolate=True, mask=None, maskParams=None, name='grating_2', opacity=1, ori=0.0, phase=array([0., 0.]), pos=array([0., 0.]), rgbPedestal=array([0., 0., 0.]), sf=array([1., 1.]), size=array([0.5, 0.5]), tex='sin', texRes=128.0, units='height', win=Window(...))
+11.7351 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+11.7464 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05000000000000001), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Obrigado pela sua participação', units='height', win=Window(...), wrapWidth=1)
+0.0092 	INFO 	Keyboard events cleared
+0.0091 	EXP 	text: autoDraw = True
+1.0189 	EXP 	Device response: <KeyPress from None: t=1.0026143998838961, value=space, duration=None>
+1.0216 	DATA 	Keypress: space
+1.0254 	EXP 	text: autoDraw = False
+1.0254 	EXP 	text_3: autoDraw = True
+1.0924 	EXP 	Device response: <KeyPress from None: t=1.0026143998838961, value=space, duration=0.07396990014240146>
+5.0295 	EXP 	Imported Grating_tt_test.xlsx as conditions, 30 conditions, 2 params
+5.0319 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'position': (0.5, 0), 'grating': 50, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+5.0752 	EXP 	text_3: autoDraw = False
+5.0752 	EXP 	text_3: autoDraw = False
+5.0752 	EXP 	grating_2: autoDraw = True
+5.0752 	EXP 	grating_2: tex = 'sin'
+7.0271 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'position': (-0.5, 0), 'grating': 100, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+7.0430 	EXP 	grating_2: autoDraw = False
+7.0430 	EXP 	grating_2: autoDraw = True
+9.0265 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'position': (0.5, 0), 'grating': 100, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+9.0429 	EXP 	grating_2: autoDraw = False
+9.0429 	EXP 	grating_2: autoDraw = True
+11.0253 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'position': (-0.5, 0), 'grating': 100, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+11.0419 	EXP 	grating_2: autoDraw = False
+11.0419 	EXP 	grating_2: autoDraw = True
+13.0281 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'position': (0.5, 0), 'grating': 100, 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+13.0427 	EXP 	grating_2: autoDraw = False
+13.0427 	EXP 	grating_2: autoDraw = True
+15.0249 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'position': (-0.5, 0), 'grating': 100, 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+15.0410 	EXP 	grating_2: autoDraw = False
+15.0410 	EXP 	grating_2: autoDraw = True
+17.0272 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'position': (-0.5, 0), 'grating': 100, 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+17.0413 	EXP 	grating_2: autoDraw = False
+17.0413 	EXP 	grating_2: autoDraw = True
+19.0258 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'position': (-0.5, 0), 'grating': 100, 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+19.0422 	EXP 	grating_2: autoDraw = False
+19.0422 	EXP 	grating_2: autoDraw = True
+21.0260 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'position': (-0.5, 0), 'grating': 50, 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+21.0419 	EXP 	grating_2: autoDraw = False
+21.0419 	EXP 	grating_2: autoDraw = True
+21.4747 	EXP 	Device response: <KeyPress from None: t=21.46513850009069, value=escape, duration=None>
+21.4755 	DATA 	Keypress: escape
+21.6116 	EXP 	Device response: <KeyPress from None: t=21.46513850009069, value=escape, duration=0.1346236001700163>
+21.6118 	EXP 	TrainingTask_Test: status = STOPPED
+21.6272 	EXP 	grating_2: autoDraw = False
+21.6275 	EXP 	TrainingTask_Test: status = STOPPED
+21.6540 	INFO 	saved data to 'C:\\Users\\Asus\\Documents\\recursos\\facul4.2\\Tese\\TrainingTask_Test\\data\\162860_TrainingTask_Test_2026-07-13_15h20.25.793.csv'
+21.6568 	INFO 	saved data to C:\Users\Asus\Documents\recursos\facul4.2\Tese\TrainingTask_Test\data\162860_TrainingTask_Test_2026-07-13_15h20.25.793.psydat
+22.0263 	INFO 	Stopping keyboard key buffers.
