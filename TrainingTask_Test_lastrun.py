@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on julho 17, 2026, at 16:17
+    on julho 17, 2026, at 16:22
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -378,7 +378,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "WelcomeScreen" ---
     text = visual.TextStim(win=win, name='text',
-        text='Irá iniciar a tarefa \n\nPressione a SPACEBAR para começar',
+        text='Irá iniciar a tarefa. A mesma consiste na apresentação de um contraste à direita/esquerda. Indique em cada trial o lado do estímulo utilizando a tecla -s- para o lado esquerdo e  -l- para o lado direito\n\nPressione a SPACEBAR para começar',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
@@ -531,20 +531,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # update params
             pass
         
-        # if text is stopping this frame...
-        if text.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text.tStartRefresh + 0-frameTolerance:
-                # keep track of stop time/frame for later
-                text.tStop = t  # not accounting for scr refresh
-                text.tStopRefresh = tThisFlipGlobal  # on global time
-                text.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text.stopped')
-                # update status
-                text.status = FINISHED
-                text.setAutoDraw(False)
-        
         # *key_resp* updates
         waitOnFlip = False
         
@@ -563,20 +549,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             waitOnFlip = True
             win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        
-        # if key_resp is stopping this frame...
-        if key_resp.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > key_resp.tStartRefresh + 0-frameTolerance:
-                # keep track of stop time/frame for later
-                key_resp.tStop = t  # not accounting for scr refresh
-                key_resp.tStopRefresh = tThisFlipGlobal  # on global time
-                key_resp.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'key_resp.stopped')
-                # update status
-                key_resp.status = FINISHED
-                key_resp.status = FINISHED
         if key_resp.status == STARTED and not waitOnFlip:
             theseKeys = key_resp.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
             _key_resp_allKeys.extend(theseKeys)
@@ -672,7 +644,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Run Routine "Blank4000" ---
     thisExp.currentRoutine = Blank4000
     Blank4000.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
+    while continueRoutine and routineTimer.getTime() < 4.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -703,7 +675,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # if text_3 is stopping this frame...
         if text_3.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_3.tStartRefresh + 0-frameTolerance:
+            if tThisFlipGlobal > text_3.tStartRefresh + 4-frameTolerance:
                 # keep track of stop time/frame for later
                 text_3.tStop = t  # not accounting for scr refresh
                 text_3.tStopRefresh = tThisFlipGlobal  # on global time
@@ -756,9 +728,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     Blank4000.tStop = globalClock.getTime(format='float')
     Blank4000.tStopRefresh = tThisFlipGlobal
     thisExp.addData('Blank4000.stopped', Blank4000.tStop)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if Blank4000.maxDurationReached:
+        routineTimer.addTime(-Blank4000.maxDuration)
+    elif Blank4000.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-4.000000)
     thisExp.nextEntry()
-    # the Routine "Blank4000" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
     trials = data.TrialHandler2(
@@ -1108,7 +1085,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Run Routine "Blank4000" ---
     thisExp.currentRoutine = Blank4000
     Blank4000.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
+    while continueRoutine and routineTimer.getTime() < 4.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1139,7 +1116,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # if text_3 is stopping this frame...
         if text_3.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_3.tStartRefresh + 0-frameTolerance:
+            if tThisFlipGlobal > text_3.tStartRefresh + 4-frameTolerance:
                 # keep track of stop time/frame for later
                 text_3.tStop = t  # not accounting for scr refresh
                 text_3.tStopRefresh = tThisFlipGlobal  # on global time
@@ -1192,9 +1169,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     Blank4000.tStop = globalClock.getTime(format='float')
     Blank4000.tStopRefresh = tThisFlipGlobal
     thisExp.addData('Blank4000.stopped', Blank4000.tStop)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if Blank4000.maxDurationReached:
+        routineTimer.addTime(-Blank4000.maxDuration)
+    elif Blank4000.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-4.000000)
     thisExp.nextEntry()
-    # the Routine "Blank4000" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
     
     # --- Prepare to start Routine "GoodbyeScreen" ---
     # create an object to store info about Routine GoodbyeScreen
