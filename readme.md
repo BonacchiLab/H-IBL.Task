@@ -1,3 +1,6 @@
+[![PsychoPy](https://img.shields.io/badge/PsychoPy-v2026.1.2-blue)](https://www.psychopy.org/)
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
+
 # H-IBL Task
 
 This repository contains the first draft implementation of the Human International Brain Laboratory (H-IBL) task developed in PsychoPy.
