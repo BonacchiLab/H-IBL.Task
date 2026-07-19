@@ -5,7 +5,7 @@
 
 This repository contains the first draft implementation of the Human International Brain Laboratory (H-IBL) task developed in PsychoPy.
 
-The project aims to adapt the International Brain Laboratory (IBL) perceptual decision-making task for human participants while preserving the core experimental design.
+The project aims to adapt the IBL perceptual decision-making task for human participants while preserving the core experimental design.
 
 This is an early development version intended for ongoing implementation, testing, and refinement. The codebase is expected to evolve as the task is validated and expanded.
 
@@ -23,6 +23,6 @@ Navigate to the project directory:
 cd H-IBL.Task
 ```
 
-Open the `.psyexp` file in PsychoPy Builder or run the generated Python script to start the experiment.
+Open the `.psyexp` file in PsychoPy Builder (recommended) or run the generated Python script to start the experiment.
 
-> **Note:** This project is currently under active development. Additional setup instructions and dependencies will be documented as the implementation progresses.
+> **Note:** Additional setup instructions and dependencies will be documented as the implementation progresses.
