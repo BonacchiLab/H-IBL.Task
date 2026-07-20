@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on julho 17, 2026, at 16:22
+    on julho 20, 2026, at 15:15
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -377,8 +377,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Start Code - component code to be run after the window creation
     
     # --- Initialize components for Routine "WelcomeScreen" ---
-    text = visual.TextStim(win=win, name='text',
-        text='Irá iniciar a tarefa. A mesma consiste na apresentação de um contraste à direita/esquerda. Indique em cada trial o lado do estímulo utilizando a tecla -s- para o lado esquerdo e  -l- para o lado direito\n\nPressione a SPACEBAR para começar',
+    textExplanation = visual.TextStim(win=win, name='textExplanation',
+        text='Irá iniciar a tarefa. A mesma consiste na apresentação de um contraste à direita/esquerda. Indique em cada trial o lado do estímulo utilizando a tecla -S- para o lado esquerdo e  -L- para o lado direito. \n\nPedimos que mantenha o olhar no centro do ecrã durante a experiência\n\nPressione a SPACEBAR para começar',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
@@ -387,7 +387,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     key_resp = keyboard.Keyboard(deviceName='defaultKeyboard')
     
     # --- Initialize components for Routine "Blank4000" ---
-    text_3 = visual.TextStim(win=win, name='text_3',
+    textBlank = visual.TextStim(win=win, name='textBlank',
         text=None,
         font='Arial',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
@@ -420,7 +420,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     keySide = keyboard.Keyboard(deviceName='defaultKeyboard')
     
     # --- Initialize components for Routine "Blank4000" ---
-    text_3 = visual.TextStim(win=win, name='text_3',
+    textBlank = visual.TextStim(win=win, name='textBlank',
         text=None,
         font='Arial',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
@@ -429,7 +429,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         depth=0.0);
     
     # --- Initialize components for Routine "GoodbyeScreen" ---
-    text_2 = visual.TextStim(win=win, name='text_2',
+    textGoodbye = visual.TextStim(win=win, name='textGoodbye',
         text='Obrigado pela sua participação',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
@@ -471,7 +471,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine WelcomeScreen
     WelcomeScreen = data.Routine(
         name='WelcomeScreen',
-        components=[text, key_resp],
+        components=[textExplanation, key_resp],
     )
     WelcomeScreen.status = NOT_STARTED
     continueRoutine = True
@@ -511,23 +511,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text* updates
+        # *textExplanation* updates
         
-        # if text is starting this frame...
-        if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if textExplanation is starting this frame...
+        if textExplanation.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text.frameNStart = frameN  # exact frame index
-            text.tStart = t  # local t and not account for scr refresh
-            text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+            textExplanation.frameNStart = frameN  # exact frame index
+            textExplanation.tStart = t  # local t and not account for scr refresh
+            textExplanation.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textExplanation, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text.started')
+            thisExp.timestampOnFlip(win, 'textExplanation.started')
             # update status
-            text.status = STARTED
-            text.setAutoDraw(True)
+            textExplanation.status = STARTED
+            textExplanation.setAutoDraw(True)
         
-        # if text is active this frame...
-        if text.status == STARTED:
+        # if textExplanation is active this frame...
+        if textExplanation.status == STARTED:
             # update params
             pass
         
@@ -616,7 +616,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine Blank4000
     Blank4000 = data.Routine(
         name='Blank4000',
-        components=[text_3],
+        components=[textBlank],
     )
     Blank4000.status = NOT_STARTED
     continueRoutine = True
@@ -652,39 +652,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text_3* updates
+        # *textBlank* updates
         
-        # if text_3 is starting this frame...
-        if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if textBlank is starting this frame...
+        if textBlank.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_3.frameNStart = frameN  # exact frame index
-            text_3.tStart = t  # local t and not account for scr refresh
-            text_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
+            textBlank.frameNStart = frameN  # exact frame index
+            textBlank.tStart = t  # local t and not account for scr refresh
+            textBlank.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textBlank, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_3.started')
+            thisExp.timestampOnFlip(win, 'textBlank.started')
             # update status
-            text_3.status = STARTED
-            text_3.setAutoDraw(True)
+            textBlank.status = STARTED
+            textBlank.setAutoDraw(True)
         
-        # if text_3 is active this frame...
-        if text_3.status == STARTED:
+        # if textBlank is active this frame...
+        if textBlank.status == STARTED:
             # update params
             pass
         
-        # if text_3 is stopping this frame...
-        if text_3.status == STARTED:
+        # if textBlank is stopping this frame...
+        if textBlank.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_3.tStartRefresh + 4-frameTolerance:
+            if tThisFlipGlobal > textBlank.tStartRefresh + 4-frameTolerance:
                 # keep track of stop time/frame for later
-                text_3.tStop = t  # not accounting for scr refresh
-                text_3.tStopRefresh = tThisFlipGlobal  # on global time
-                text_3.frameNStop = frameN  # exact frame index
+                textBlank.tStop = t  # not accounting for scr refresh
+                textBlank.tStopRefresh = tThisFlipGlobal  # on global time
+                textBlank.frameNStop = frameN  # exact frame index
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text_3.stopped')
+                thisExp.timestampOnFlip(win, 'textBlank.stopped')
                 # update status
-                text_3.status = FINISHED
-                text_3.setAutoDraw(False)
+                textBlank.status = FINISHED
+                textBlank.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1057,7 +1057,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine Blank4000
     Blank4000 = data.Routine(
         name='Blank4000',
-        components=[text_3],
+        components=[textBlank],
     )
     Blank4000.status = NOT_STARTED
     continueRoutine = True
@@ -1093,39 +1093,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text_3* updates
+        # *textBlank* updates
         
-        # if text_3 is starting this frame...
-        if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if textBlank is starting this frame...
+        if textBlank.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_3.frameNStart = frameN  # exact frame index
-            text_3.tStart = t  # local t and not account for scr refresh
-            text_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
+            textBlank.frameNStart = frameN  # exact frame index
+            textBlank.tStart = t  # local t and not account for scr refresh
+            textBlank.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textBlank, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_3.started')
+            thisExp.timestampOnFlip(win, 'textBlank.started')
             # update status
-            text_3.status = STARTED
-            text_3.setAutoDraw(True)
+            textBlank.status = STARTED
+            textBlank.setAutoDraw(True)
         
-        # if text_3 is active this frame...
-        if text_3.status == STARTED:
+        # if textBlank is active this frame...
+        if textBlank.status == STARTED:
             # update params
             pass
         
-        # if text_3 is stopping this frame...
-        if text_3.status == STARTED:
+        # if textBlank is stopping this frame...
+        if textBlank.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_3.tStartRefresh + 4-frameTolerance:
+            if tThisFlipGlobal > textBlank.tStartRefresh + 4-frameTolerance:
                 # keep track of stop time/frame for later
-                text_3.tStop = t  # not accounting for scr refresh
-                text_3.tStopRefresh = tThisFlipGlobal  # on global time
-                text_3.frameNStop = frameN  # exact frame index
+                textBlank.tStop = t  # not accounting for scr refresh
+                textBlank.tStopRefresh = tThisFlipGlobal  # on global time
+                textBlank.frameNStop = frameN  # exact frame index
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text_3.stopped')
+                thisExp.timestampOnFlip(win, 'textBlank.stopped')
                 # update status
-                text_3.status = FINISHED
-                text_3.setAutoDraw(False)
+                textBlank.status = FINISHED
+                textBlank.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1182,7 +1182,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine GoodbyeScreen
     GoodbyeScreen = data.Routine(
         name='GoodbyeScreen',
-        components=[text_2],
+        components=[textGoodbye],
     )
     GoodbyeScreen.status = NOT_STARTED
     continueRoutine = True
@@ -1218,39 +1218,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text_2* updates
+        # *textGoodbye* updates
         
-        # if text_2 is starting this frame...
-        if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if textGoodbye is starting this frame...
+        if textGoodbye.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_2.frameNStart = frameN  # exact frame index
-            text_2.tStart = t  # local t and not account for scr refresh
-            text_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+            textGoodbye.frameNStart = frameN  # exact frame index
+            textGoodbye.tStart = t  # local t and not account for scr refresh
+            textGoodbye.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textGoodbye, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_2.started')
+            thisExp.timestampOnFlip(win, 'textGoodbye.started')
             # update status
-            text_2.status = STARTED
-            text_2.setAutoDraw(True)
+            textGoodbye.status = STARTED
+            textGoodbye.setAutoDraw(True)
         
-        # if text_2 is active this frame...
-        if text_2.status == STARTED:
+        # if textGoodbye is active this frame...
+        if textGoodbye.status == STARTED:
             # update params
             pass
         
-        # if text_2 is stopping this frame...
-        if text_2.status == STARTED:
+        # if textGoodbye is stopping this frame...
+        if textGoodbye.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_2.tStartRefresh + 2.0-frameTolerance:
+            if tThisFlipGlobal > textGoodbye.tStartRefresh + 2.0-frameTolerance:
                 # keep track of stop time/frame for later
-                text_2.tStop = t  # not accounting for scr refresh
-                text_2.tStopRefresh = tThisFlipGlobal  # on global time
-                text_2.frameNStop = frameN  # exact frame index
+                textGoodbye.tStop = t  # not accounting for scr refresh
+                textGoodbye.tStopRefresh = tThisFlipGlobal  # on global time
+                textGoodbye.frameNStop = frameN  # exact frame index
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text_2.stopped')
+                thisExp.timestampOnFlip(win, 'textGoodbye.stopped')
                 # update status
-                text_2.status = FINISHED
-                text_2.setAutoDraw(False)
+                textGoodbye.status = FINISHED
+                textGoodbye.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
