@@ -10,7 +10,7 @@ If you publish work using this script the most relevant publication is:
         https://doi.org/10.3758/s13428-018-01193-y
 
 """
-
+# teste
 # --- Import packages ---
 from psychopy import locale_setup
 from psychopy import prefs
