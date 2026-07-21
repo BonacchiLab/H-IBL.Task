@@ -20,7 +20,7 @@
     <Param val="True" valType="bool" updates="None" name="Save log file"/>
     <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
     <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
-    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="2" valType="num" updates="None" name="Screen"/>
     <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
     <Param val="height" valType="str" updates="None" name="Units"/>
@@ -294,11 +294,11 @@
         <Param val="gauss" valType="file" updates="constant" name="mask"/>
         <Param val="grating100or50" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="5" valType="num" updates="constant" name="phase"/>
+        <Param val="orientation" valType="num" updates="set every frame" name="ori"/>
+        <Param val="phase" valType="num" updates="set every frame" name="phase"/>
         <Param val="position" valType="list" updates="set every frame" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="1" valType="num" updates="constant" name="sf"/>
+        <Param val="spacial_freq" valType="num" updates="set every frame" name="sf"/>
         <Param val="size" valType="list" updates="set every frame" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
@@ -306,7 +306,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="3.00" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="sin" valType="file" updates="constant" name="tex"/>
+        <Param val="$texture" valType="file" updates="set every frame" name="tex"/>
         <Param val="256" valType="num" updates="constant" name="texture resolution"/>
         <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
