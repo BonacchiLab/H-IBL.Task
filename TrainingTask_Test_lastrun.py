@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on julho 21, 2026, at 12:58
+    on julho 21, 2026, at 14:05
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -410,14 +410,21 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor=(0.0000, 0.0000, 0.0000), fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
-    grating100or50 = visual.GratingStim(
-        win=win, name='grating100or50',units='deg', 
+    gabor = visual.GratingStim(
+        win=win, name='gabor',units='deg', 
         tex=None, mask='gauss', anchor='center',
         ori=1.0, pos=[0,0], draggable=False, size=1.0, sf=1.0, phase=1.0,
         color=[1,1,1], colorSpace='rgb',
         opacity=None, contrast=1.0, blendmode='avg',
         texRes=256.0, interpolate=True, depth=-2.0)
     keySide = keyboard.Keyboard(deviceName='defaultKeyboard')
+    text = visual.TextStim(win=win, name='text',
+        text='',
+        font='Arial',
+        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-4.0);
     
     # --- Initialize components for Routine "Blank4000" ---
     textBlank = visual.TextStim(win=win, name='textBlank',
@@ -776,12 +783,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine TrainingTrials
         TrainingTrials = data.Routine(
             name='TrainingTrials',
-            components=[polygonVertical, polygonHorizontal, grating100or50, keySide],
+            components=[polygonVertical, polygonHorizontal, gabor, keySide, text],
         )
         TrainingTrials.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
-        grating100or50.setContrast(grating)
+        gabor.setContrast(grating)
         # create starting attributes for keySide
         keySide.keys = []
         keySide.rt = []
@@ -809,7 +816,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # --- Run Routine "TrainingTrials" ---
         thisExp.currentRoutine = TrainingTrials
         TrainingTrials.forceEnded = routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 4.0:
+        while continueRoutine:
             # if trial has changed, end Routine now
             if hasattr(thisTrial, 'status') and thisTrial.status == STOPPING:
                 continueRoutine = False
@@ -886,44 +893,44 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     polygonHorizontal.status = FINISHED
                     polygonHorizontal.setAutoDraw(False)
             
-            # *grating100or50* updates
+            # *gabor* updates
             
-            # if grating100or50 is starting this frame...
-            if grating100or50.status == NOT_STARTED and tThisFlip >= 1.00-frameTolerance:
+            # if gabor is starting this frame...
+            if gabor.status == NOT_STARTED and tThisFlip >= 1.00-frameTolerance:
                 # keep track of start time/frame for later
-                grating100or50.frameNStart = frameN  # exact frame index
-                grating100or50.tStart = t  # local t and not account for scr refresh
-                grating100or50.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(grating100or50, 'tStartRefresh')  # time at next scr refresh
+                gabor.frameNStart = frameN  # exact frame index
+                gabor.tStart = t  # local t and not account for scr refresh
+                gabor.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(gabor, 'tStartRefresh')  # time at next scr refresh
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'grating100or50.started')
+                thisExp.timestampOnFlip(win, 'gabor.started')
                 # update status
-                grating100or50.status = STARTED
-                grating100or50.setAutoDraw(True)
+                gabor.status = STARTED
+                gabor.setAutoDraw(True)
             
-            # if grating100or50 is active this frame...
-            if grating100or50.status == STARTED:
+            # if gabor is active this frame...
+            if gabor.status == STARTED:
                 # update params
-                grating100or50.setPos(position, log=False)
-                grating100or50.setSize(size, log=False)
-                grating100or50.setOri(orientation, log=False)
-                grating100or50.setTex(texture, log=False)
-                grating100or50.setSF(spacial_freq, log=False)
-                grating100or50.setPhase(phase, log=False)
+                gabor.setPos(position, log=False)
+                gabor.setSize(size, log=False)
+                gabor.setOri(orientation, log=False)
+                gabor.setTex(texture, log=False)
+                gabor.setSF(spacial_freq, log=False)
+                gabor.setPhase(phase, log=False)
             
-            # if grating100or50 is stopping this frame...
-            if grating100or50.status == STARTED:
+            # if gabor is stopping this frame...
+            if gabor.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > grating100or50.tStartRefresh + 3.00-frameTolerance:
+                if tThisFlipGlobal > gabor.tStartRefresh + 3.00-frameTolerance:
                     # keep track of stop time/frame for later
-                    grating100or50.tStop = t  # not accounting for scr refresh
-                    grating100or50.tStopRefresh = tThisFlipGlobal  # on global time
-                    grating100or50.frameNStop = frameN  # exact frame index
+                    gabor.tStop = t  # not accounting for scr refresh
+                    gabor.tStopRefresh = tThisFlipGlobal  # on global time
+                    gabor.frameNStop = frameN  # exact frame index
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'grating100or50.stopped')
+                    thisExp.timestampOnFlip(win, 'gabor.stopped')
                     # update status
-                    grating100or50.status = FINISHED
-                    grating100or50.setAutoDraw(False)
+                    gabor.status = FINISHED
+                    gabor.setAutoDraw(False)
             
             # *keySide* updates
             waitOnFlip = False
@@ -971,6 +978,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         keySide.corr = 0
                     # a response ends the routine
                     continueRoutine = False
+            
+            # *text* updates
+            
+            # if text is starting this frame...
+            if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text.frameNStart = frameN  # exact frame index
+                text.tStart = t  # local t and not account for scr refresh
+                text.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'text.started')
+                # update status
+                text.status = STARTED
+                text.setAutoDraw(True)
+            
+            # if text is active this frame...
+            if text.status == STARTED:
+                # update params
+                text.setText(grating, log=False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1028,13 +1055,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if keySide.keys != None:  # we had a response
             trials.addData('keySide.rt', keySide.rt)
             trials.addData('keySide.duration', keySide.duration)
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if TrainingTrials.maxDurationReached:
-            routineTimer.addTime(-TrainingTrials.maxDuration)
-        elif TrainingTrials.forceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-4.000000)
+        # the Routine "TrainingTrials" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         # mark thisTrial as finished
         if hasattr(thisTrial, 'status'):
             thisTrial.status = FINISHED
