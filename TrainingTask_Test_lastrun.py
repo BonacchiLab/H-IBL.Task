@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on julho 22, 2026, at 14:25
+    on julho 22, 2026, at 21:16
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -395,28 +395,32 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         languageStyle='LTR',
         depth=0.0);
     
-    # --- Initialize components for Routine "TrainingTrials" ---
+    # --- Initialize components for Routine "GratingTrials" ---
     polygonVertical = visual.Rect(
         win=win, name='polygonVertical',units='deg', 
         width=[1.0, 1.0][0], height=[1.0, 1.0][1],
         ori=1.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=(0.0000, 0.0000, 0.0000), fillColor='white',
-        opacity=None, depth=-1.0, interpolate=True)
+        opacity=None, depth=0.0, interpolate=True)
     polygonHorizontal = visual.Rect(
         win=win, name='polygonHorizontal',units='deg', 
         width=[1.0, 1.0][0], height=[1.0, 1.0][1],
         ori=1.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=(0.0000, 0.0000, 0.0000), fillColor='white',
-        opacity=None, depth=-2.0, interpolate=True)
+        opacity=None, depth=-1.0, interpolate=True)
     gabor = visual.GratingStim(
         win=win, name='gabor',units='deg', 
-        tex=None, mask='gauss', anchor='center',
+        tex=None, mask='sin', anchor='center',
         ori=1.0, pos=[0,0], draggable=False, size=1.0, sf=1.0, phase=1.0,
         color=[1,1,1], colorSpace='rgb',
         opacity=None, contrast=1.0, blendmode='avg',
-        texRes=256.0, interpolate=True, depth=-3.0)
+        texRes=256.0, interpolate=True, depth=-2.0)
+    # Run 'Begin Experiment' code from codeCorKey
+    from psychopy.hardware import joystick
+    
+    joy = joystick.Joystick(0)
     keySide = keyboard.Keyboard(deviceName='defaultKeyboard')
     
     # --- Initialize components for Routine "TrialFeedback" ---
@@ -696,7 +700,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # if textBlank is stopping this frame...
         if textBlank.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > textBlank.tStartRefresh + 4-frameTolerance:
+            if tThisFlipGlobal > textBlank.tStartRefresh + 4.0-frameTolerance:
                 # keep track of stop time/frame for later
                 textBlank.tStop = t  # not accounting for scr refresh
                 textBlank.tStopRefresh = tThisFlipGlobal  # on global time
@@ -793,34 +797,52 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             for paramName in thisTrial:
                 globals()[paramName] = thisTrial[paramName]
         
-        # --- Prepare to start Routine "TrainingTrials" ---
-        # create an object to store info about Routine TrainingTrials
-        TrainingTrials = data.Routine(
-            name='TrainingTrials',
+        # --- Prepare to start Routine "GratingTrials" ---
+        # create an object to store info about Routine GratingTrials
+        GratingTrials = data.Routine(
+            name='GratingTrials',
             components=[polygonVertical, polygonHorizontal, gabor, keySide],
         )
-        TrainingTrials.status = NOT_STARTED
+        GratingTrials.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        gabor.setContrast(grating)
+        gabor.setMask(mask)
         # Run 'Begin Routine' code from codeCorKey
+        stimPos = position[0]
+        centre = joy.getAllAxes()[0]
+        
+        if stimPos > 0:
+            direction = -1      # da direita para o centro
+        else:
+            direction = 1       # da esquerda para o centro
+        
+        # colocar o estímulo na posição inicial
+        gabor.setPos((stimPos, 0))
+        
+        # velocidade
+        speed = 2
+        
+        # distância ao centro para considerar resposta correta
+        centreThreshold = 0.5
+        
         if position[0] > 0:
             correct_ans = "l"
         else:
             correct_ans = "s"
-        gabor.setContrast(grating)
         # create starting attributes for keySide
         keySide.keys = []
         keySide.rt = []
         _keySide_allKeys = []
-        # store start times for TrainingTrials
-        TrainingTrials.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-        TrainingTrials.tStart = globalClock.getTime(format='float')
-        TrainingTrials.status = STARTED
-        thisExp.addData('TrainingTrials.started', TrainingTrials.tStart)
-        TrainingTrials.maxDuration = None
+        # store start times for GratingTrials
+        GratingTrials.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+        GratingTrials.tStart = globalClock.getTime(format='float')
+        GratingTrials.status = STARTED
+        thisExp.addData('GratingTrials.started', GratingTrials.tStart)
+        GratingTrials.maxDuration = None
         # keep track of which components have finished
-        TrainingTrialsComponents = TrainingTrials.components
-        for thisComponent in TrainingTrials.components:
+        GratingTrialsComponents = GratingTrials.components
+        for thisComponent in GratingTrials.components:
             thisComponent.tStart = None
             thisComponent.tStop = None
             thisComponent.tStartRefresh = None
@@ -832,9 +854,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         frameN = -1
         
-        # --- Run Routine "TrainingTrials" ---
-        thisExp.currentRoutine = TrainingTrials
-        TrainingTrials.forceEnded = routineForceEnded = not continueRoutine
+        # --- Run Routine "GratingTrials" ---
+        thisExp.currentRoutine = GratingTrials
+        GratingTrials.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine and routineTimer.getTime() < 4.0:
             # if trial has changed, end Routine now
             if hasattr(thisTrial, 'status') and thisTrial.status == STOPPING:
@@ -950,12 +972,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     # update status
                     gabor.status = FINISHED
                     gabor.setAutoDraw(False)
+            # Run 'Each Frame' code from codeCorKey
+            x = joy.getAllAxes()[0] - centre
+            print(x)
             
             # *keySide* updates
             waitOnFlip = False
             
             # if keySide is starting this frame...
-            if keySide.status == NOT_STARTED and tThisFlip >= 1.00-frameTolerance:
+            if keySide.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                 # keep track of start time/frame for later
                 keySide.frameNStart = frameN  # exact frame index
                 keySide.tStart = t  # local t and not account for scr refresh
@@ -973,7 +998,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # if keySide is stopping this frame...
             if keySide.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > keySide.tStartRefresh + 3-frameTolerance:
+                if tThisFlipGlobal > keySide.tStartRefresh + 0-frameTolerance:
                     # keep track of stop time/frame for later
                     keySide.tStop = t  # not accounting for scr refresh
                     keySide.tStopRefresh = tThisFlipGlobal  # on global time
@@ -1010,20 +1035,20 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     thisExp=thisExp, 
                     win=win, 
                     timers=[routineTimer, globalClock], 
-                    currentRoutine=TrainingTrials,
+                    currentRoutine=GratingTrials,
                 )
                 # skip the frame we paused on
                 continue
             
             # has a Component requested the Routine to end?
             if not continueRoutine:
-                TrainingTrials.forceEnded = routineForceEnded = True
+                GratingTrials.forceEnded = routineForceEnded = True
             # has the Routine been forcibly ended?
-            if TrainingTrials.forceEnded or routineForceEnded:
+            if GratingTrials.forceEnded or routineForceEnded:
                 break
             # has every Component finished?
             continueRoutine = False
-            for thisComponent in TrainingTrials.components:
+            for thisComponent in GratingTrials.components:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
@@ -1032,14 +1057,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # --- Ending Routine "TrainingTrials" ---
-        for thisComponent in TrainingTrials.components:
+        # --- Ending Routine "GratingTrials" ---
+        for thisComponent in GratingTrials.components:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        # store stop times for TrainingTrials
-        TrainingTrials.tStop = globalClock.getTime(format='float')
-        TrainingTrials.tStopRefresh = tThisFlipGlobal
-        thisExp.addData('TrainingTrials.stopped', TrainingTrials.tStop)
+        # store stop times for GratingTrials
+        GratingTrials.tStop = globalClock.getTime(format='float')
+        GratingTrials.tStopRefresh = tThisFlipGlobal
+        thisExp.addData('GratingTrials.stopped', GratingTrials.tStop)
         # check responses
         if keySide.keys in ['', [], None]:  # No response was made
             keySide.keys = None
@@ -1055,9 +1080,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             trials.addData('keySide.rt', keySide.rt)
             trials.addData('keySide.duration', keySide.duration)
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if TrainingTrials.maxDurationReached:
-            routineTimer.addTime(-TrainingTrials.maxDuration)
-        elif TrainingTrials.forceEnded:
+        if GratingTrials.maxDurationReached:
+            routineTimer.addTime(-GratingTrials.maxDuration)
+        elif GratingTrials.forceEnded:
             routineTimer.reset()
         else:
             routineTimer.addTime(-4.000000)
@@ -1090,6 +1115,18 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             volume = 1
             duration = 1
             
+        if abs(stimPos) <= centreThreshold:
+        
+            score += 1
+        
+            text_feedback = "Correct!\n+1 point"
+            win.color = "green"
+        
+        else:
+        
+            text_feedback = "Wrong!"
+            win.color = "red"
+         
         win.flip()
         soundFeedback.setSound(sound_feedback , secs=duration, hamming=True)
         soundFeedback.setVolume(1.0, log=False)
@@ -1322,7 +1359,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # if textBlank is stopping this frame...
         if textBlank.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > textBlank.tStartRefresh + 4-frameTolerance:
+            if tThisFlipGlobal > textBlank.tStartRefresh + 4.0-frameTolerance:
                 # keep track of stop time/frame for later
                 textBlank.tStop = t  # not accounting for scr refresh
                 textBlank.tStopRefresh = tThisFlipGlobal  # on global time
