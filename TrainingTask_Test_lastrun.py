@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on julho 22, 2026, at 14:13
+    on julho 22, 2026, at 14:25
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -402,21 +402,21 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         ori=1.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=(0.0000, 0.0000, 0.0000), fillColor='white',
-        opacity=None, depth=0.0, interpolate=True)
+        opacity=None, depth=-1.0, interpolate=True)
     polygonHorizontal = visual.Rect(
         win=win, name='polygonHorizontal',units='deg', 
         width=[1.0, 1.0][0], height=[1.0, 1.0][1],
         ori=1.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=(0.0000, 0.0000, 0.0000), fillColor='white',
-        opacity=None, depth=-1.0, interpolate=True)
+        opacity=None, depth=-2.0, interpolate=True)
     gabor = visual.GratingStim(
         win=win, name='gabor',units='deg', 
         tex=None, mask='gauss', anchor='center',
         ori=1.0, pos=[0,0], draggable=False, size=1.0, sf=1.0, phase=1.0,
         color=[1,1,1], colorSpace='rgb',
         opacity=None, contrast=1.0, blendmode='avg',
-        texRes=256.0, interpolate=True, depth=-2.0)
+        texRes=256.0, interpolate=True, depth=-3.0)
     keySide = keyboard.Keyboard(deviceName='defaultKeyboard')
     
     # --- Initialize components for Routine "TrialFeedback" ---
@@ -802,6 +802,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         TrainingTrials.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from codeCorKey
+        if position[0] > 0:
+            correct_ans = "l"
+        else:
+            correct_ans = "s"
         gabor.setContrast(grating)
         # create starting attributes for keySide
         keySide.keys = []
@@ -1146,7 +1151,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # if textFeedback is stopping this frame...
             if textFeedback.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > textFeedback.tStartRefresh + 1.0-frameTolerance:
+                if tThisFlipGlobal > textFeedback.tStartRefresh + duration-frameTolerance:
                     # keep track of stop time/frame for later
                     textFeedback.tStop = t  # not accounting for scr refresh
                     textFeedback.tStopRefresh = tThisFlipGlobal  # on global time
