@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on julho 23, 2026, at 15:46
+    on julho 27, 2026, at 15:05
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -387,27 +387,37 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     key_resp = keyboard.Keyboard(deviceName='defaultKeyboard')
     
     # --- Initialize components for Routine "TrainingTrials" ---
+    # set audio backend
+    sound.Sound.backend = 'ptb'
+    soundGoCue = sound.Sound(
+        'A', 
+        secs=0.2, 
+        stereo=True, 
+        hamming=True, 
+        speaker=None,    name='soundGoCue'
+    )
+    soundGoCue.setVolume(1.0)
     polygonVertical = visual.Rect(
         win=win, name='polygonVertical',units='deg', 
         width=[1.0, 1.0][0], height=[1.0, 1.0][1],
         ori=1.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=(0.0000, 0.0000, 0.0000), fillColor='white',
-        opacity=None, depth=0.0, interpolate=True)
+        opacity=None, depth=-1.0, interpolate=True)
     polygonHorizontal = visual.Rect(
         win=win, name='polygonHorizontal',units='deg', 
         width=[1.0, 1.0][0], height=[1.0, 1.0][1],
         ori=1.0, pos=[0,0], draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor=(0.0000, 0.0000, 0.0000), fillColor='white',
-        opacity=None, depth=-1.0, interpolate=True)
+        opacity=None, depth=-2.0, interpolate=True)
     gabor = visual.GratingStim(
         win=win, name='gabor',units='deg', 
         tex=None, mask='sin', anchor='center',
         ori=1.0, pos=[0,0], draggable=False, size=1.0, sf=1.0, phase=1.0,
         color=[1,1,1], colorSpace='rgb',
         opacity=None, contrast=1.0, blendmode='avg',
-        texRes=256.0, interpolate=True, depth=-2.0)
+        texRes=256.0, interpolate=True, depth=-3.0)
     keySide = keyboard.Keyboard(deviceName='defaultKeyboard')
     
     # --- Initialize components for Routine "TrialFeedback" ---
@@ -420,8 +430,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-1.0);
-    # set audio backend
-    sound.Sound.backend = 'ptb'
     soundFeedback = sound.Sound(
         'A', 
         secs=-1, 
@@ -663,11 +671,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine TrainingTrials
         TrainingTrials = data.Routine(
             name='TrainingTrials',
-            components=[polygonVertical, polygonHorizontal, gabor, keySide],
+            components=[soundGoCue, polygonVertical, polygonHorizontal, gabor, keySide],
         )
         TrainingTrials.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        soundGoCue.setSound('12000', secs=0.2, hamming=True)
+        soundGoCue.setVolume(1.0, log=False)
+        soundGoCue.seek(0)
         gabor.setContrast(grating)
         # Run 'Begin Routine' code from codeCorKey
         if position[0] > 0:
@@ -711,6 +722,34 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
+            
+            # *soundGoCue* updates
+            
+            # if soundGoCue is starting this frame...
+            if soundGoCue.status == NOT_STARTED and tThisFlip >= 0.1-frameTolerance:
+                # keep track of start time/frame for later
+                soundGoCue.frameNStart = frameN  # exact frame index
+                soundGoCue.tStart = t  # local t and not account for scr refresh
+                soundGoCue.tStartRefresh = tThisFlipGlobal  # on global time
+                # add timestamp to datafile
+                thisExp.addData('soundGoCue.started', tThisFlipGlobal)
+                # update status
+                soundGoCue.status = STARTED
+                soundGoCue.play(when=win)  # sync with win flip
+            
+            # if soundGoCue is stopping this frame...
+            if soundGoCue.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > soundGoCue.tStartRefresh + 0.2-frameTolerance or soundGoCue.isFinished:
+                    # keep track of stop time/frame for later
+                    soundGoCue.tStop = t  # not accounting for scr refresh
+                    soundGoCue.tStopRefresh = tThisFlipGlobal  # on global time
+                    soundGoCue.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'soundGoCue.stopped')
+                    # update status
+                    soundGoCue.status = FINISHED
+                    soundGoCue.stop()
             
             # *polygonVertical* updates
             
@@ -907,6 +946,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         TrainingTrials.tStop = globalClock.getTime(format='float')
         TrainingTrials.tStopRefresh = tThisFlipGlobal
         thisExp.addData('TrainingTrials.stopped', TrainingTrials.tStop)
+        soundGoCue.pause()  # ensure sound has stopped at end of Routine
         # check responses
         if keySide.keys in ['', [], None]:  # No response was made
             keySide.keys = None
