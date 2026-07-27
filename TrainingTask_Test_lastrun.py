@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on julho 27, 2026, at 15:05
+    on julho 27, 2026, at 16:54
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -391,7 +391,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     sound.Sound.backend = 'ptb'
     soundGoCue = sound.Sound(
         'A', 
-        secs=0.2, 
+        secs=0.08, 
         stereo=True, 
         hamming=True, 
         speaker=None,    name='soundGoCue'
@@ -418,6 +418,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         color=[1,1,1], colorSpace='rgb',
         opacity=None, contrast=1.0, blendmode='avg',
         texRes=256.0, interpolate=True, depth=-3.0)
+    textGrating = visual.TextStim(win=win, name='textGrating',
+        text='',
+        font='Arial',
+        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-4.0);
     keySide = keyboard.Keyboard(deviceName='defaultKeyboard')
     
     # --- Initialize components for Routine "TrialFeedback" ---
@@ -438,6 +445,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         speaker=None,    name='soundFeedback'
     )
     soundFeedback.setVolume(1.0)
+    prog = visual.Progress(
+        win, name='prog',
+        progress=0.0,
+        pos=[0,0], size=(9, 0.8), anchor='center-left', units='deg',
+        barColor='white', backColor=None, borderColor='white', colorSpace='rgb',
+        lineWidth=4.0, opacity=1.0, ori=1.0,
+        depth=-3
+    )
     
     # --- Initialize components for Routine "Blank4000" ---
     textBlank = visual.TextStim(win=win, name='textBlank',
@@ -671,12 +686,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine TrainingTrials
         TrainingTrials = data.Routine(
             name='TrainingTrials',
-            components=[soundGoCue, polygonVertical, polygonHorizontal, gabor, keySide],
+            components=[soundGoCue, polygonVertical, polygonHorizontal, gabor, textGrating, keySide],
         )
         TrainingTrials.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
-        soundGoCue.setSound('12000', secs=0.2, hamming=True)
+        soundGoCue.setSound('12000', secs=0.08, hamming=True)
         soundGoCue.setVolume(1.0, log=False)
         soundGoCue.seek(0)
         gabor.setContrast(grating)
@@ -740,7 +755,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # if soundGoCue is stopping this frame...
             if soundGoCue.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > soundGoCue.tStartRefresh + 0.2-frameTolerance or soundGoCue.isFinished:
+                if tThisFlipGlobal > soundGoCue.tStartRefresh + 0.08-frameTolerance or soundGoCue.isFinished:
                     # keep track of stop time/frame for later
                     soundGoCue.tStop = t  # not accounting for scr refresh
                     soundGoCue.tStopRefresh = tThisFlipGlobal  # on global time
@@ -856,6 +871,40 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     # update status
                     gabor.status = FINISHED
                     gabor.setAutoDraw(False)
+            
+            # *textGrating* updates
+            
+            # if textGrating is starting this frame...
+            if textGrating.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+                # keep track of start time/frame for later
+                textGrating.frameNStart = frameN  # exact frame index
+                textGrating.tStart = t  # local t and not account for scr refresh
+                textGrating.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(textGrating, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'textGrating.started')
+                # update status
+                textGrating.status = STARTED
+                textGrating.setAutoDraw(True)
+            
+            # if textGrating is active this frame...
+            if textGrating.status == STARTED:
+                # update params
+                textGrating.setText(grating, log=False)
+            
+            # if textGrating is stopping this frame...
+            if textGrating.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > textGrating.tStartRefresh + 3-frameTolerance:
+                    # keep track of stop time/frame for later
+                    textGrating.tStop = t  # not accounting for scr refresh
+                    textGrating.tStopRefresh = tThisFlipGlobal  # on global time
+                    textGrating.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'textGrating.stopped')
+                    # update status
+                    textGrating.status = FINISHED
+                    textGrating.setAutoDraw(False)
             
             # *keySide* updates
             waitOnFlip = False
@@ -973,15 +1022,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine TrialFeedback
         TrialFeedback = data.Routine(
             name='TrialFeedback',
-            components=[textFeedback, soundFeedback],
+            components=[textFeedback, soundFeedback, prog],
         )
         TrialFeedback.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
         # Run 'Begin Routine' code from codeFconditions
-        print("correct_ans =", correct_ans, type(correct_ans))
-        print("keySide =", keySide, type(keySide))
-        
         if correct_ans == keySide.keys:
             score += 1
             text_feedback = f"Correct!\n+1 point\nTotal: {score}"
@@ -996,8 +1042,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             sound_feedback = 1000
             volume = 1
             duration = 1
+        #For prog bar
+        accuracy = score / (trials.thisN + 1)
             
         win.flip()
+        
         soundFeedback.setSound(sound_feedback , secs=duration, hamming=True)
         soundFeedback.setVolume(1.0, log=False)
         soundFeedback.seek(0)
@@ -1096,6 +1145,42 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     # update status
                     soundFeedback.status = FINISHED
                     soundFeedback.stop()
+            
+            # *prog* updates
+            
+            # if prog is starting this frame...
+            if prog.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+                # keep track of start time/frame for later
+                prog.frameNStart = frameN  # exact frame index
+                prog.tStart = t  # local t and not account for scr refresh
+                prog.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(prog, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'prog.started')
+                # update status
+                prog.status = STARTED
+                prog.setAutoDraw(True)
+            
+            # if prog is active this frame...
+            if prog.status == STARTED:
+                # update params
+                prog.setPos((-4.4, - 3), log=False)
+                prog.setOri(0.0, log=False)
+                prog.setProgress(accuracy, log=False)
+            
+            # if prog is stopping this frame...
+            if prog.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > prog.tStartRefresh + duration-frameTolerance:
+                    # keep track of stop time/frame for later
+                    prog.tStop = t  # not accounting for scr refresh
+                    prog.tStopRefresh = tThisFlipGlobal  # on global time
+                    prog.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'prog.stopped')
+                    # update status
+                    prog.status = FINISHED
+                    prog.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
