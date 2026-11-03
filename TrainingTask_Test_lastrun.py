@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on setembro 03, 2026, at 16:22
+    on novembro 03, 2026, at 18:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -424,8 +424,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=-4.0);
+        depth=-5.0);
     keySide = keyboard.Keyboard(deviceName='defaultKeyboard')
+    # Run 'Begin Experiment' code from codeMove
+    from psychopy.hardware import keyboard as psy_keyboard
+    
+    kbd = psy_keyboard.Keyboard()
+    
     
     # --- Initialize components for Routine "TrialFeedback" ---
     # Run 'Begin Experiment' code from codeFconditions
@@ -771,6 +776,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             keySide.keys = []
             keySide.rt = []
             _keySide_allKeys = []
+            # Run 'Begin Routine' code from codeMove
+            try:
+            
+                if hasattr(position[0], '__iter__') or isinstance(position[0], (list, tuple)):
+                    pos_x = float(position[0][0])
+                    pos_y = float(position[0][1])
+                else:
+                    pos_x = float(position[0])
+                    pos_y = float(position[1])
+            except Exception:
+                pos_x = 0.0
+                pos_y = 0.0
+            
+            
+            kbd.clearEvents()
+            
             # store start times for TrainingTrials
             TrainingTrials.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
             TrainingTrials.tStart = globalClock.getTime(format='float')
@@ -1019,6 +1040,21 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                             keySide.corr = 0
                         # a response ends the routine
                         continueRoutine = False
+                # Run 'Each Frame' code from codeMove
+                pressed_keys = kbd.getKeys(keyList=['left', 'right'], waitRelease=False, clear=False)
+                
+                step = 0.5 
+                
+                if pressed_keys:
+                    active = [t.name for t in pressed_keys if t.duration is None]
+                    
+                    if 'left' in active:
+                        pos_x -= step
+                    if 'right' in active:
+                        pos_x += step
+                
+                gabor.pos = [pos_x, pos_y]
+                
                 
                 # check for quit (typically the Esc key)
                 if defaultKeyboard.getKeys(keyList=["escape"]):

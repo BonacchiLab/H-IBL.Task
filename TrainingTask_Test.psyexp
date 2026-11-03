@@ -330,6 +330,23 @@
         <Param val="deg" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </GratingComponent>
+      <CodeComponent name="codeCorKey" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="if ((position[0] &gt; 0)) {&amp;#10;    correct_ans = &quot;l&quot;;&amp;#10;} else {&amp;#10;    correct_ans = &quot;s&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if position[0] &gt; 0:&amp;#10;    correct_ans = &quot;l&quot;&amp;#10;else:&amp;#10;    correct_ans = &quot;s&quot;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="codeCorKey" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <TextComponent name="textGrating" plugin="None">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -357,23 +374,6 @@
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
-      <CodeComponent name="codeCorKey" plugin="None">
-        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((position[0] &gt; 0)) {&amp;#10;    correct_ans = &quot;l&quot;;&amp;#10;} else {&amp;#10;    correct_ans = &quot;s&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if position[0] &gt; 0:&amp;#10;    correct_ans = &quot;l&quot;&amp;#10;else:&amp;#10;    correct_ans = &quot;s&quot;" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="codeCorKey" valType="code" updates="None" name="name"/>
-      </CodeComponent>
       <KeyboardComponent name="keySide" plugin="None">
         <Param val="'s','l'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="$correct_ans" valType="str" updates="constant" name="correctAns"/>
@@ -393,6 +393,23 @@
         <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+      <CodeComponent name="codeMove" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="from psychopy.hardware import keyboard as psy_keyboard&amp;#10;&amp;#10;kbd = psy_keyboard.Keyboard()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="import {keyboard as psy_keyboard} from 'psychopy/hardware';&amp;#10;kbd = new psy_keyboard.Keyboard();&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="try {&amp;#10;    if (((&quot;__iter__&quot; in position[0]) || ((position[0] instanceof list) || (position[0] instanceof tuple)))) {&amp;#10;        pos_x = Number.parseFloat(position[0][0]);&amp;#10;        pos_y = Number.parseFloat(position[0][1]);&amp;#10;    } else {&amp;#10;        pos_x = Number.parseFloat(position[0]);&amp;#10;        pos_y = Number.parseFloat(position[1]);&amp;#10;    }&amp;#10;} catch(e) {&amp;#10;    pos_x = 0.0;&amp;#10;    pos_y = 0.0;&amp;#10;}&amp;#10;kbd.clearEvents();&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="try:&amp;#10;&amp;#10;    if hasattr(position[0], '__iter__') or isinstance(position[0], (list, tuple)):&amp;#10;        pos_x = float(position[0][0])&amp;#10;        pos_y = float(position[0][1])&amp;#10;    else:&amp;#10;        pos_x = float(position[0])&amp;#10;        pos_y = float(position[1])&amp;#10;except Exception:&amp;#10;    pos_x = 0.0&amp;#10;    pos_y = 0.0&amp;#10;&amp;#10;&amp;#10;kbd.clearEvents()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="pressed_keys = kbd.getKeys(keyList=['left', 'right'], waitRelease=False, clear=False)&amp;#10;&amp;#10;step = 0.5 &amp;#10;&amp;#10;if pressed_keys:&amp;#10;    active = [t.name for t in pressed_keys if t.duration is None]&amp;#10;    &amp;#10;    if 'left' in active:&amp;#10;        pos_x -= step&amp;#10;    if 'right' in active:&amp;#10;        pos_x += step&amp;#10;&amp;#10;gabor.pos = [pos_x, pos_y]&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;pressed_keys = kbd.getKeys({&quot;keyList&quot;: [&quot;left&quot;, &quot;right&quot;], &quot;waitRelease&quot;: false, &quot;clear&quot;: false});&amp;#10;step = 0.5;&amp;#10;if (pressed_keys) {&amp;#10;    active = function () {&amp;#10;    var _pj_a = [], _pj_b = pressed_keys;&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var t = _pj_b[_pj_c];&amp;#10;        if ((t.duration === null)) {&amp;#10;            _pj_a.push(t.name);&amp;#10;        }&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;}&amp;#10;.call(this);&amp;#10;    if (_pj.in_es6(&quot;left&quot;, active)) {&amp;#10;        pos_x -= step;&amp;#10;    }&amp;#10;    if (_pj.in_es6(&quot;right&quot;, active)) {&amp;#10;        pos_x += step;&amp;#10;    }&amp;#10;}&amp;#10;gabor.pos = [pos_x, pos_y];&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="codeMove" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="TrialFeedback">
       <RoutineSettingsComponent name="TrialFeedback" plugin="None">
