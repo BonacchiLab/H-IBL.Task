@@ -335,64 +335,18 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((position[0] &gt; 0)) {&amp;#10;    correct_ans = &quot;l&quot;;&amp;#10;} else {&amp;#10;    correct_ans = &quot;s&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if position[0] &gt; 0:&amp;#10;    correct_ans = &quot;l&quot;&amp;#10;else:&amp;#10;    correct_ans = &quot;s&quot;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="gabor_acertou = false;&amp;#10;if (((position[0] &gt; 0) &amp;&amp; (gabor.pos[0] === 0.0))) {&amp;#10;    gabor_acertou = true;&amp;#10;} else {&amp;#10;    if (((position[0] &lt; 0) &amp;&amp; (gabor.pos[0] === 0.0))) {&amp;#10;        gabor_acertou = true;&amp;#10;    }&amp;#10;}&amp;#10;if (gabor_acertou) {&amp;#10;    msg_feedback = &quot;Acertou!&quot;;&amp;#10;    cor_feedback = &quot;green&quot;;&amp;#10;} else {&amp;#10;    msg_feedback = &quot;Incorreto / N\u00e3o atingiu o limite&quot;;&amp;#10;    cor_feedback = &quot;red&quot;;&amp;#10;}&amp;#10;psychoJS.experiment.addData(&quot;gabor_sucesso&quot;, gabor_acertou);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="# Criamos uma variável de acerto totalmente independente&amp;#10;gabor_acertou = False&amp;#10;&amp;#10;# Se começou na direita, o objetivo era atingir o limite 0.0 à esquerda&amp;#10;if position[0] &gt; 0 and gabor.pos[0] == 0.0:&amp;#10;    gabor_acertou = True&amp;#10;&amp;#10;# Se começou na esquerda, o objetivo era atingir o limite 0.0 à direita&amp;#10;elif position[0] &lt; 0 and gabor.pos[0] == 0.0:&amp;#10;    gabor_acertou = True&amp;#10;&amp;#10;# Define o texto e a cor com base na nova variável independente&amp;#10;if gabor_acertou:&amp;#10;    msg_feedback = &quot;Acertou!&quot;&amp;#10;    cor_feedback = &quot;green&quot;&amp;#10;else:&amp;#10;    msg_feedback = &quot;Incorreto / Não atingiu o limite&quot;&amp;#10;    cor_feedback = &quot;red&quot;&amp;#10;&amp;#10;# Grava esta variável específica no ficheiro de resultados (.csv)&amp;#10;thisExp.addData('gabor_sucesso', gabor_acertou)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="codeCorKey" valType="code" updates="None" name="name"/>
       </CodeComponent>
-      <TextComponent name="textGrating" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="False" valType="code" updates="constant" name="draggable"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Arial" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="textGrating" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="1" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="3" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="$grating" valType="str" updates="set every frame" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="code" updates="None" name="validator"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
-      <KeyboardComponent name="keySide" plugin="None">
-        <Param val="'s','l'" valType="list" updates="constant" name="allowedKeys"/>
-        <Param val="$correct_ans" valType="str" updates="constant" name="correctAns"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
-        <Param val="keySide" valType="code" updates="None" name="name"/>
-        <Param val="press" valType="str" updates="constant" name="registerOn"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="1.00" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="3" valType="code" updates="constant" name="stopVal"/>
-        <Param val="last key" valType="str" updates="constant" name="store"/>
-        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
-        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
-      </KeyboardComponent>
       <CodeComponent name="codeMove" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
@@ -401,8 +355,8 @@
         <Param val="try {&amp;#10;    if (((&quot;__iter__&quot; in position[0]) || ((position[0] instanceof list) || (position[0] instanceof tuple)))) {&amp;#10;        pos_x = Number.parseFloat(position[0][0]);&amp;#10;        pos_y = Number.parseFloat(position[0][1]);&amp;#10;    } else {&amp;#10;        pos_x = Number.parseFloat(position[0]);&amp;#10;        pos_y = Number.parseFloat(position[1]);&amp;#10;    }&amp;#10;} catch(e) {&amp;#10;    pos_x = 0.0;&amp;#10;    pos_y = 0.0;&amp;#10;}&amp;#10;kbd.clearEvents();&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="try:&amp;#10;&amp;#10;    if hasattr(position[0], '__iter__') or isinstance(position[0], (list, tuple)):&amp;#10;        pos_x = float(position[0][0])&amp;#10;        pos_y = float(position[0][1])&amp;#10;    else:&amp;#10;        pos_x = float(position[0])&amp;#10;        pos_y = float(position[1])&amp;#10;except Exception:&amp;#10;    pos_x = 0.0&amp;#10;    pos_y = 0.0&amp;#10;&amp;#10;&amp;#10;kbd.clearEvents()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="pressed_keys = kbd.getKeys(keyList=['left', 'right'], waitRelease=False, clear=False)&amp;#10;&amp;#10;step = 0.5 &amp;#10;&amp;#10;if pressed_keys:&amp;#10;    active = [t.name for t in pressed_keys if t.duration is None]&amp;#10;    &amp;#10;    if 'left' in active:&amp;#10;        pos_x -= step&amp;#10;    if 'right' in active:&amp;#10;        pos_x += step&amp;#10;&amp;#10;gabor.pos = [pos_x, pos_y]&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;pressed_keys = kbd.getKeys({&quot;keyList&quot;: [&quot;left&quot;, &quot;right&quot;], &quot;waitRelease&quot;: false, &quot;clear&quot;: false});&amp;#10;step = 0.5;&amp;#10;if (pressed_keys) {&amp;#10;    active = function () {&amp;#10;    var _pj_a = [], _pj_b = pressed_keys;&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var t = _pj_b[_pj_c];&amp;#10;        if ((t.duration === null)) {&amp;#10;            _pj_a.push(t.name);&amp;#10;        }&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;}&amp;#10;.call(this);&amp;#10;    if (_pj.in_es6(&quot;left&quot;, active)) {&amp;#10;        pos_x -= step;&amp;#10;    }&amp;#10;    if (_pj.in_es6(&quot;right&quot;, active)) {&amp;#10;        pos_x += step;&amp;#10;    }&amp;#10;}&amp;#10;gabor.pos = [pos_x, pos_y];&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="pressed_keys = kbd.getKeys(keyList=['left', 'right'], waitRelease=False, clear=False)&amp;#10;&amp;#10;step = 0.5 &amp;#10;&amp;#10;if pressed_keys:&amp;#10;    active = [t.name for t in pressed_keys if t.duration is None]&amp;#10;    &amp;#10;    if 'left' in active:&amp;#10;        pos_x -= step&amp;#10;    if 'right' in active:&amp;#10;        pos_x += step&amp;#10;&amp;#10;gabor.pos = [pos_x, pos_y]&amp;#10;&amp;#10;if position[0] &gt; 0 and pos_x &lt; 0.0:&amp;#10;    pos_x = 0.0&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;elif position[0] &lt; 0 and pos_x &gt; 0.0:&amp;#10;    pos_x = 0.0&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;&amp;#10;gabor.pos = [pos_x, pos_y]" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;pressed_keys = kbd.getKeys({&quot;keyList&quot;: [&quot;left&quot;, &quot;right&quot;], &quot;waitRelease&quot;: false, &quot;clear&quot;: false});&amp;#10;step = 0.5;&amp;#10;if (pressed_keys) {&amp;#10;    active = function () {&amp;#10;    var _pj_a = [], _pj_b = pressed_keys;&amp;#10;    for (var _pj_c = 0, _pj_d = _pj_b.length; (_pj_c &lt; _pj_d); _pj_c += 1) {&amp;#10;        var t = _pj_b[_pj_c];&amp;#10;        if ((t.duration === null)) {&amp;#10;            _pj_a.push(t.name);&amp;#10;        }&amp;#10;    }&amp;#10;    return _pj_a;&amp;#10;}&amp;#10;.call(this);&amp;#10;    if (_pj.in_es6(&quot;left&quot;, active)) {&amp;#10;        pos_x -= step;&amp;#10;    }&amp;#10;    if (_pj.in_es6(&quot;right&quot;, active)) {&amp;#10;        pos_x += step;&amp;#10;    }&amp;#10;}&amp;#10;gabor.pos = [pos_x, pos_y];&amp;#10;if (((position[0] &gt; 0) &amp;&amp; (pos_x &lt; 0.0))) {&amp;#10;    pos_x = 0.0;&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    if (((position[0] &lt; 0) &amp;&amp; (pos_x &gt; 0.0))) {&amp;#10;        pos_x = 0.0;&amp;#10;        continueRoutine = false;&amp;#10;    }&amp;#10;}&amp;#10;gabor.pos = [pos_x, pos_y];&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
@@ -433,8 +387,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="score = 0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="score = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((correct_ans === keySide.keys)) {&amp;#10;    score += 1;&amp;#10;    text_feedback = `Correct!&amp;#10;+1 point&amp;#10;Total: ${score}`&amp;#10;;&amp;#10;    psychoJS.window.color = &quot;green&quot;;&amp;#10;    sound_feedback = 4000;&amp;#10;    volume = 1;&amp;#10;    duration = 0.5;&amp;#10;} else {&amp;#10;    score += 0;&amp;#10;    text_feedback = `Wrong!&amp;#10;+0 points&amp;#10;Total: ${score}`&amp;#10;;&amp;#10;    psychoJS.window.color = &quot;red&quot;;&amp;#10;    sound_feedback = 1000;&amp;#10;    volume = 1;&amp;#10;    duration = 1;&amp;#10;}&amp;#10;psychoJS.window.flip();&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if correct_ans == keySide.keys:&amp;#10;    score += 1&amp;#10;    text_feedback = f&quot;Correct!\n+1 point\nTotal: {score}&quot;&amp;#10;    win.color = &quot;green&quot;&amp;#10;    sound_feedback = 4000&amp;#10;    volume = 1&amp;#10;    duration = 0.5&amp;#10;else:&amp;#10;    score += 0&amp;#10;    text_feedback = f&quot;Wrong!\n+0 points\nTotal: {score}&quot;&amp;#10;    win.color = &quot;red&quot;&amp;#10;    sound_feedback = 1000&amp;#10;    volume = 1&amp;#10;    duration = 1&amp;#10;&amp;#10;    &amp;#10;win.flip()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="if (gabor_acertou) {&amp;#10;    score += 1;&amp;#10;    text_feedback = `Correct!&amp;#10;+1 point&amp;#10;Total: ${score}`&amp;#10;;&amp;#10;    psychoJS.window.color = &quot;green&quot;;&amp;#10;    sound_feedback = 4000;&amp;#10;    volume = 1;&amp;#10;    duration = 0.5;&amp;#10;} else {&amp;#10;    score += 0;&amp;#10;    text_feedback = `Wrong!&amp;#10;+0 points&amp;#10;Total: ${score}`&amp;#10;;&amp;#10;    psychoJS.window.color = &quot;red&quot;;&amp;#10;    sound_feedback = 1000;&amp;#10;    volume = 1;&amp;#10;    duration = 1;&amp;#10;}&amp;#10;psychoJS.window.flip();&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="&amp;#10;if gabor_acertou:&amp;#10;    score += 1&amp;#10;    text_feedback = f&quot;Correct!\n+1 point\nTotal: {score}&quot;&amp;#10;    win.color = &quot;green&quot;&amp;#10;    sound_feedback = 4000&amp;#10;    volume = 1&amp;#10;    duration = 0.5&amp;#10;else:&amp;#10;    score += 0&amp;#10;    text_feedback = f&quot;Wrong!\n+0 points\nTotal: {score}&quot;&amp;#10;    win.color = &quot;red&quot;&amp;#10;    sound_feedback = 1000&amp;#10;    volume = 1&amp;#10;    duration = 1&amp;#10;&amp;#10;win.flip()&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on novembro 03, 2026, at 18:24
+    on novembro 03, 2026, at 19:09
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -418,14 +418,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         color=[1,1,1], colorSpace='rgb',
         opacity=None, contrast=1.0, blendmode='avg',
         texRes=256.0, interpolate=True, depth=-3.0)
-    textGrating = visual.TextStim(win=win, name='textGrating',
-        text='',
-        font='Arial',
-        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=-5.0);
-    keySide = keyboard.Keyboard(deviceName='defaultKeyboard')
     # Run 'Begin Experiment' code from codeMove
     from psychopy.hardware import keyboard as psy_keyboard
     
@@ -758,7 +750,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # create an object to store info about Routine TrainingTrials
             TrainingTrials = data.Routine(
                 name='TrainingTrials',
-                components=[soundGoCue, polygonVertical, polygonHorizontal, gabor, textGrating, keySide],
+                components=[soundGoCue, polygonVertical, polygonHorizontal, gabor],
             )
             TrainingTrials.status = NOT_STARTED
             continueRoutine = True
@@ -767,15 +759,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             soundGoCue.setVolume(1.0, log=False)
             soundGoCue.seek(0)
             gabor.setContrast(grating)
-            # Run 'Begin Routine' code from codeCorKey
-            if position[0] > 0:
-                correct_ans = "l"
-            else:
-                correct_ans = "s"
-            # create starting attributes for keySide
-            keySide.keys = []
-            keySide.rt = []
-            _keySide_allKeys = []
             # Run 'Begin Routine' code from codeMove
             try:
             
@@ -959,87 +942,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         # update status
                         gabor.status = FINISHED
                         gabor.setAutoDraw(False)
-                
-                # *textGrating* updates
-                
-                # if textGrating is starting this frame...
-                if textGrating.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
-                    # keep track of start time/frame for later
-                    textGrating.frameNStart = frameN  # exact frame index
-                    textGrating.tStart = t  # local t and not account for scr refresh
-                    textGrating.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(textGrating, 'tStartRefresh')  # time at next scr refresh
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'textGrating.started')
-                    # update status
-                    textGrating.status = STARTED
-                    textGrating.setAutoDraw(True)
-                
-                # if textGrating is active this frame...
-                if textGrating.status == STARTED:
-                    # update params
-                    textGrating.setText(grating, log=False)
-                
-                # if textGrating is stopping this frame...
-                if textGrating.status == STARTED:
-                    # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > textGrating.tStartRefresh + 3-frameTolerance:
-                        # keep track of stop time/frame for later
-                        textGrating.tStop = t  # not accounting for scr refresh
-                        textGrating.tStopRefresh = tThisFlipGlobal  # on global time
-                        textGrating.frameNStop = frameN  # exact frame index
-                        # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'textGrating.stopped')
-                        # update status
-                        textGrating.status = FINISHED
-                        textGrating.setAutoDraw(False)
-                
-                # *keySide* updates
-                waitOnFlip = False
-                
-                # if keySide is starting this frame...
-                if keySide.status == NOT_STARTED and tThisFlip >= 1.00-frameTolerance:
-                    # keep track of start time/frame for later
-                    keySide.frameNStart = frameN  # exact frame index
-                    keySide.tStart = t  # local t and not account for scr refresh
-                    keySide.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(keySide, 'tStartRefresh')  # time at next scr refresh
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'keySide.started')
-                    # update status
-                    keySide.status = STARTED
-                    # keyboard checking is just starting
-                    waitOnFlip = True
-                    win.callOnFlip(keySide.clock.reset)  # t=0 on next screen flip
-                    win.callOnFlip(keySide.clearEvents, eventType='keyboard')  # clear events on next screen flip
-                
-                # if keySide is stopping this frame...
-                if keySide.status == STARTED:
-                    # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > keySide.tStartRefresh + 3-frameTolerance:
-                        # keep track of stop time/frame for later
-                        keySide.tStop = t  # not accounting for scr refresh
-                        keySide.tStopRefresh = tThisFlipGlobal  # on global time
-                        keySide.frameNStop = frameN  # exact frame index
-                        # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'keySide.stopped')
-                        # update status
-                        keySide.status = FINISHED
-                        keySide.status = FINISHED
-                if keySide.status == STARTED and not waitOnFlip:
-                    theseKeys = keySide.getKeys(keyList=['s','l'], ignoreKeys=["escape"], waitRelease=False)
-                    _keySide_allKeys.extend(theseKeys)
-                    if len(_keySide_allKeys):
-                        keySide.keys = _keySide_allKeys[-1].name  # just the last key pressed
-                        keySide.rt = _keySide_allKeys[-1].rt
-                        keySide.duration = _keySide_allKeys[-1].duration
-                        # was this correct?
-                        if (keySide.keys == str(correct_ans)) or (keySide.keys == correct_ans):
-                            keySide.corr = 1
-                        else:
-                            keySide.corr = 0
-                        # a response ends the routine
-                        continueRoutine = False
                 # Run 'Each Frame' code from codeMove
                 pressed_keys = kbd.getKeys(keyList=['left', 'right'], waitRelease=False, clear=False)
                 
@@ -1055,6 +957,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 
                 gabor.pos = [pos_x, pos_y]
                 
+                if position[0] > 0 and pos_x < 0.0:
+                    pos_x = 0.0
+                    continueRoutine = False
+                
+                elif position[0] < 0 and pos_x > 0.0:
+                    pos_x = 0.0
+                    continueRoutine = False
+                
+                
+                gabor.pos = [pos_x, pos_y]
                 
                 # check for quit (typically the Esc key)
                 if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1099,20 +1011,29 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             TrainingTrials.tStopRefresh = tThisFlipGlobal
             thisExp.addData('TrainingTrials.stopped', TrainingTrials.tStop)
             soundGoCue.pause()  # ensure sound has stopped at end of Routine
-            # check responses
-            if keySide.keys in ['', [], None]:  # No response was made
-                keySide.keys = None
-                # was no response the correct answer?!
-                if str(correct_ans).lower() == 'none':
-                   keySide.corr = 1;  # correct non-response
-                else:
-                   keySide.corr = 0;  # failed to respond (incorrectly)
-            # store data for trialsTraining (TrialHandler)
-            trialsTraining.addData('keySide.keys',keySide.keys)
-            trialsTraining.addData('keySide.corr', keySide.corr)
-            if keySide.keys != None:  # we had a response
-                trialsTraining.addData('keySide.rt', keySide.rt)
-                trialsTraining.addData('keySide.duration', keySide.duration)
+            # Run 'End Routine' code from codeCorKey
+            # Criamos uma variável de acerto totalmente independente
+            gabor_acertou = False
+            
+            # Se começou na direita, o objetivo era atingir o limite 0.0 à esquerda
+            if position[0] > 0 and gabor.pos[0] == 0.0:
+                gabor_acertou = True
+            
+            # Se começou na esquerda, o objetivo era atingir o limite 0.0 à direita
+            elif position[0] < 0 and gabor.pos[0] == 0.0:
+                gabor_acertou = True
+            
+            # Define o texto e a cor com base na nova variável independente
+            if gabor_acertou:
+                msg_feedback = "Acertou!"
+                cor_feedback = "green"
+            else:
+                msg_feedback = "Incorreto / Não atingiu o limite"
+                cor_feedback = "red"
+            
+            # Grava esta variável específica no ficheiro de resultados (.csv)
+            thisExp.addData('gabor_sucesso', gabor_acertou)
+            
             # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
             if TrainingTrials.maxDurationReached:
                 routineTimer.addTime(-TrainingTrials.maxDuration)
@@ -1131,7 +1052,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             continueRoutine = True
             # update component parameters for each repeat
             # Run 'Begin Routine' code from codeFconditions
-            if correct_ans == keySide.keys:
+            
+            if gabor_acertou:
                 score += 1
                 text_feedback = f"Correct!\n+1 point\nTotal: {score}"
                 win.color = "green"
@@ -1146,8 +1068,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 volume = 1
                 duration = 1
             
-                
             win.flip()
+            
             
             soundFeedback.setSound(sound_feedback , secs=duration, hamming=True)
             soundFeedback.setVolume(1.0, log=False)
@@ -1776,7 +1698,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             continueRoutine = True
             # update component parameters for each repeat
             # Run 'Begin Routine' code from codeFconditions
-            if correct_ans == keySide.keys:
+            
+            if gabor_acertou:
                 score += 1
                 text_feedback = f"Correct!\n+1 point\nTotal: {score}"
                 win.color = "green"
@@ -1791,8 +1714,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 volume = 1
                 duration = 1
             
-                
             win.flip()
+            
             
             soundFeedback.setSound(sound_feedback , secs=duration, hamming=True)
             soundFeedback.setVolume(1.0, log=False)
