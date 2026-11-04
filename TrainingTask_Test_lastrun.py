@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.2),
-    on novembro 03, 2026, at 19:09
+    on novembro 04, 2026, at 14:26
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1012,27 +1012,20 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             thisExp.addData('TrainingTrials.stopped', TrainingTrials.tStop)
             soundGoCue.pause()  # ensure sound has stopped at end of Routine
             # Run 'End Routine' code from codeCorKey
-            # Criamos uma variável de acerto totalmente independente
-            gabor_acertou = False
             
-            # Se começou na direita, o objetivo era atingir o limite 0.0 à esquerda
+            corans = False
+            
             if position[0] > 0 and gabor.pos[0] == 0.0:
-                gabor_acertou = True
+                corans = True
             
-            # Se começou na esquerda, o objetivo era atingir o limite 0.0 à direita
+            
             elif position[0] < 0 and gabor.pos[0] == 0.0:
-                gabor_acertou = True
+                corans = True
             
-            # Define o texto e a cor com base na nova variável independente
-            if gabor_acertou:
-                msg_feedback = "Acertou!"
-                cor_feedback = "green"
-            else:
-                msg_feedback = "Incorreto / Não atingiu o limite"
-                cor_feedback = "red"
             
-            # Grava esta variável específica no ficheiro de resultados (.csv)
-            thisExp.addData('gabor_sucesso', gabor_acertou)
+            
+            
+            thisExp.addData('Correct answer', corans)
             
             # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
             if TrainingTrials.maxDurationReached:
@@ -1053,7 +1046,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # update component parameters for each repeat
             # Run 'Begin Routine' code from codeFconditions
             
-            if gabor_acertou:
+            if corans:
                 score += 1
                 text_feedback = f"Correct!\n+1 point\nTotal: {score}"
                 win.color = "green"
@@ -1699,7 +1692,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # update component parameters for each repeat
             # Run 'Begin Routine' code from codeFconditions
             
-            if gabor_acertou:
+            if corans:
                 score += 1
                 text_feedback = f"Correct!\n+1 point\nTotal: {score}"
                 win.color = "green"
