@@ -1,11 +1,20 @@
-# Data files
+# Data folders
 data/
-IBLOriginalMiceTask/
+screen_calibration/dataset_test/
 
-# Command files
-important.txt
+# Misc. folders/files
+Misc/
+screen_calibration/screen_data/
 
-# Draft scripts
-parameters_xlsx_gen.py
+# Cache files
+__pycache__/
+*.py[cod]
+
+#Virtual environment
+.venv/
+
+
+
+
 
 
